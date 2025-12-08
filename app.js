@@ -1,1448 +1,710 @@
-class UHVQuizApp {
+class MATHSQuizApp {
     constructor() {
         this.questions = [
-             {
+  {
     id: 1,
-    question: "What is invariant and universal among all human beings",
-    options: ["Natural Acceptance", "Understanding", "Expectations", "None of these"],
-    correct: 0
-  },
-  {
-    id: 2,
-    question: "Value education helps to",
-    options: ["Remove our confusions", "Bring harmony in all levels of human living", "Removes our contradictions", "All of these"],
-    correct: 3
-  },
-  {
-    id: 3,
-    question: "Holistic development of human beings",
-    options: ["Living only with Physical facility", "Living with Relationships", "Living for all the three – right understanding, relationship and physical facility (Human Consciousness)", "None of these"],
+    question: "If φ be the angle between the tangent and radius vector at any point on the curve, r = f(θ) then tan φ equals to:",
+    options: ["dr/ds", "r(dθ/ds)", "r(dθ/dr)", "dθ/dr"],
     correct: 2
   },
   {
-    id: 4,
-    question: "Experiential validation of proposal means",
-    options: ["Living according to our desires", "Living according to proposal after verifying it by natural acceptance", "Living according to our expectations", "Living according to our thoughts"],
+    id: 2,
+    question: "Curvature of a straight line is:",
+    options: ["∞", "0", "1", "none of these"],
     correct: 1
+  },
+  {
+    id: 3,
+    question: "The angle between the radius vector r = a sin θ and tangent to the curve at any point is φ =",
+    options: ["θ/2", "θ", "0", "π/2"],
+    correct: 3
+  },
+  {
+    id: 4,
+    question: "The radius of curvature of the curve y = x² when x = 0 is:",
+    options: ["1/√2", "√2", "2", "1/2"],
+    correct: 3
   },
   {
     id: 5,
-    question: "Ensuring justice in relationship on the basis of values leads to --------- in the society.",
-    options: ["Trust", "Fearlessness", "Respect", "None of these"],
-    correct: 1
+    question: "The polar form of the cartesian equation x² + y² = 9 is:",
+    options: ["r² = 81", "r² = 18", "r = 9", "r = 3"],
+    correct: 3
   },
   {
     id: 6,
-    question: "Which of the following is more pronounced in animal consciousness?",
-    options: ["Right understanding", "Physical facility", "Relationship", "None of these"],
-    correct: 1
+    question: "The radius of curvature of the curve y = eˣ at the point (0, 1) is:",
+    options: ["2√2", "√2", "2", "√2/2"],
+    correct: 0
   },
   {
     id: 7,
-    question: "Identify the correct order.",
-    options: ["Physical facility, right understanding, relationship", "Physical facility, relationship, right understanding", "Relationship, right understanding, physical facility", "Right understanding, relationship, physical facility"],
-    correct: 3
+    question: "For the polar curve r = f(θ), the relation between θ and coordinates (x, y) is:",
+    options: ["tan θ = x/y", "tan θ = y/x", "x = r cos θ", "x = r sin θ"],
+    correct: 1
   },
   {
     id: 8,
-    question: "Self-explorations means",
-    options: ["Dialogue between what you are and what you what to be", "It is the process of self-evaluation through self-investigation", "It is the process of knowing the human conduct", "All theses"],
-    correct: 3
+    question: "The radius of curvature for the curve y = f(x) is ρ =",
+    options: ["(1+y₂²)^(3/2) / y₁", "(1+y₁²)^(3/2) / y₂", "(1+y₁²)^(2/3) / y₂", "(1-y₁²)^(3/2) / y₂"],
+    correct: 1
   },
   {
     id: 9,
-    question: "Which of the following fact is not true about profession, if ethics is followed in professional life?",
-    options: ["Able to earn a livelihood of the family", "Evaluated by the wealth it generates", "Requires certain skills", "Profession is also a service"],
-    correct: 1
+    question: "The Maclaurin's series expansion of the function f(x) = eˣ is:",
+    options: ["1 - x - x²/2 - x³/6 + ⋯", "1 - x + x²/2 - x³/6 + ⋯", "1 + x + x²/2 + x³/6 + ⋯", "-1 + x - x²/2 + x³/6 - ⋯"],
+    correct: 2
   },
   {
     id: 10,
-    question: "Need for value education:",
-    options: ["Correct identification of our aspirations", "To fulfill our aspirations in continuity", "Evaluation of our beliefs", "All of these"],
-    correct: 3
+    question: "The radius of curvature at any point of the circle x² + y² = 16 is:",
+    options: ["4", "12", "16", "6"],
+    correct: 0
   },
   {
     id: 11,
-    question: "Universal human aspirations means:",
-    options: ["Happiness and Prosperity", "Continuity of Happiness and Prosperity", "Happiness", "Prosperity"],
-    correct: 1
+    question: "If φ be the angle between the tangent and radius vector at any point on the curve, r = f(θ) then cot φ is equals to:",
+    options: ["r(dr/dθ)", "(1/r)(dr/dθ)", "r(dθ/dr)", "(1/r)(dθ/dr)"],
+    correct: 3
   },
   {
     id: 12,
-    question: "What is happiness?",
-    options: ["A harmony state in which you want to be", "A state getting through sensations", "A state of preconditioning", "All of these"],
+    question: "The Taylor's series expansion of the function f(x) about the point x = a is:",
+    options: ["f(a) + (x-a)f'(a)/1! + (x-a)²f''(a)/2! + ⋯", "f(a) - (x-a)f'(a)/1! - (x-a)²f''(a)/2! - ⋯", "f(a) + (x+a)f'(a)/1! + (x+a)²f''(a)/2! + ⋯", "f(x) + (x+a)f'(x)/1! + (x+a)²f''(x)/2! + ⋯"],
     correct: 0
   },
   {
     id: 13,
-    question: "The basic guideline for value education:",
-    options: ["Cannot be defined for the present system", "Cannot be universal", "Universal, Natural, Rational and Verifiable", "None of these"],
-    correct: 2
+    question: "If the curvature of a function f(x) is zero, then which of the following functions could be f(x)?",
+    options: ["ax + b", "ax² + bx + c", "sin x", "cos x"],
+    correct: 0
   },
   {
     id: 14,
-    question: "Which one of the following is NOT the part of basic guidelines prepared for Value Education?",
-    options: ["Universal", "Rational", "Leading to disharmony", "Verifiable"],
+    question: "The angle between the radius vector and tangent for the vector r = ae^(θ cot α) is:",
+    options: ["tan α", "cot α", "α", "θ"],
     correct: 2
   },
   {
     id: 15,
-    question: "Which of the following is the attitude of ethical human conduct?",
-    options: ["Values", "Wealth", "Storage", "None of these"],
+    question: "The angle between the radius vector and tangent for the vector r = aθ is:",
+    options: ["tan⁻¹(1/θ)", "tan⁻¹(θ)", "r", "a/θ"],
     correct: 0
   },
   {
     id: 16,
-    question: "Imagination includes",
-    options: ["Desires and Thoughts", "Thoughts and Expectations", "Desire and Expectations", "Desires, Thoughts and Expectations (DTE)"],
-    correct: 3
-  },
-  {
-    id: 17,
-    question: "Which of the options given below is one of the dimensions of human endeavour?",
-    options: ["Education", "Corruption", "Competition", "None of these"],
+    question: "The radius of curvature to the curve x = at², y = 2at when t = 0 is:",
+    options: ["2a", "a", "2", "a/2"],
     correct: 0
   },
   {
+    id: 17,
+    question: "The radius of curvature for the curve x = f(t), y = g(t) is ρ =",
+    options: ["(x'² + y'²)^(3/2) / (x'y'' + y'x'')", "(x'² - y'²)^(3/2) / (x'y'' - y'x'')", "(x'² + y'²)^(2/3) / (x'y'' + y'x'')", "(x'² + y'²)^(3/2) / (x'y'' - y'x'')"],
+    correct: 3
+  },
+  {
     id: 18,
-    question: "The basic desire of the human being is always",
-    options: ["Happy", "Prosperous", "Happy and Prosperous", "None of these"],
+    question: "The curvature of the function f(x) = x³ - x + 1 at x = 1 is:",
+    options: ["6/5", "6/√5", "6/5^(3/2)", "3/5^(3/2)"],
     correct: 2
   },
   {
     id: 19,
-    question: "Human life is lived at four levels: Individual, Family, ...................., and Nature.",
-    options: ["Community", "Imaging", "Society", "Analyzing"],
-    correct: 2
+    question: "The radius of curvature for the curve r = f(θ) is ρ =",
+    options: ["(r² + r₁²)^(3/2) / (r² + 2r₁² - rr₂)", "(r² + r₁²)^(3/2) / (r² - 2r₁² - rr₂)", "(r² - r₁²)^(3/2) / (r² + 2r₁² - rr₂)", "(r² + r₁²)^(2/3) / (r² + 2r₁² - rr₂)"],
+    correct: 0
   },
   {
     id: 20,
-    question: "The definitiveness of human conduct in terms of values, policies and character is termed as .....................",
-    options: ["Responsibilities", "Values", "Profession", "None of these"],
+    question: "If the curvature of a curve increases then, the radius of curvature:",
+    options: ["increases", "decreases", "constant", "none of these"],
     correct: 1
   },
+
+  // UNIT-II: Partial Differentiation
   {
     id: 21,
-    question: "Developing the ethical competence in the profession is the only effective way to ensure ........................",
-    options: ["Responsibilities", "Ethics", "Professionalism", "Success"],
-    correct: 1
+    question: "If f(x, y, z) = x² + xyz + z, then the value of fₓ at (1,1,1)",
+    options: ["0", "1", "3", "-1"],
+    correct: 2
   },
   {
     id: 22,
-    question: ".................. are considered the moral standards by which people judge the behaviour.",
-    options: ["Responsibilities", "Ethics", "Professionalism", "Success"],
+    question: "If z = 3x²y + 5y then ∂²z/∂x∂y is:",
+    options: ["3xy", "6x", "3x + 5", "6xy"],
     correct: 1
   },
   {
     id: 23,
-    question: ".............. is the implications of right understanding in profession.",
-    options: ["Responsibilities", "Ethics", "Professionalism", "Success"],
-    correct: 1
+    question: "The function f(x, y) = x² + y² + 6x - 12 has an extreme value at which one of the following intervals:",
+    options: ["(-3, 0)", "(0, 3)", "(0, 0)", "(-3, -3)"],
+    correct: 0
   },
   {
     id: 24,
-    question: "Holistic production systems are",
-    options: ["Eco-friendly", "People friendly", "Both Eco- friendly and People friendly", "None of these"],
-    correct: 2
+    question: "If u = yˣ then ∂u/∂x is:",
+    options: ["yˣ", "yˣ log y", "yˣ log x", "xyˣ⁻¹"],
+    correct: 1
   },
   {
     id: 25,
-    question: "Lot of physical facilities can provide us",
-    options: ["Happiness", "Prosperity", "Both Prosperity and Happiness", "None of these"],
-    correct: 3
+    question: "If f(x, y, z) = x + y + z - log z, then fz(1,1,2)",
+    options: ["1/2", "1", "2", "0"],
+    correct: 0
   },
   {
     id: 26,
-    question: "The basic capacity of analyzing is known as",
-    options: ["Desire", "Expectation", "Thought", "Behaviour"],
+    question: "If f(x, y, z) = cos(xy) + sin(y) + z, then fₓ(1/2, π/2, 7)",
+    options: ["-π/(2√2)", "π/(4√3)", "-π/4", "π/√2"],
     correct: 2
   },
   {
     id: 27,
-    question: "The process of education and right living leads to...............",
-    options: ["Labour", "Right understanding", "Existence", "Co-existence"],
-    correct: 3
+    question: "If x = r cos θ, y = r sin θ then the value of ∂(x,y)/∂(r,θ) is:",
+    options: ["r", "1", "0", "r²"],
+    correct: 0
   },
   {
     id: 28,
-    question: "The definiteness of behaviour and work of human being is termed as",
-    options: ["Human Behaviour", "Human Character", "Human Constitution", "Human Efforts"],
-    correct: 1
+    question: "If u = yˣ then ∂u/∂y is:",
+    options: ["yˣ", "yˣ log log y", "yˣ log log x", "xyˣ⁻¹"],
+    correct: 0
   },
   {
     id: 29,
-    question: "Understanding of human values leads to the practice of",
-    options: ["Responsibility", "Professional Behaviour", "Ethics", "None of these"],
-    correct: 2
+    question: "If u = eˣ cos y and v = eˣ sin y the value of J(u,v/x,y) is:",
+    options: ["e²ˣ", "e²ˣ/2", "-e²ˣ/2", "e⁻²ˣ"],
+    correct: 0
   },
   {
     id: 30,
-    question: "The second dimension of human being is",
-    options: ["Thought", "Work", "Behaviour", "Realization"],
-    correct: 3
+    question: "If u = x³ + y³, then ∂²u/∂x∂y is:",
+    options: ["-3", "3", "0", "3x + 3y"],
+    correct: 2
   },
   {
     id: 31,
-    question: "When we set our goals in right direction with the help of right understanding, it is called as .............",
-    options: ["Skill Domain", "Development", "Value Domain", "Prosperity"],
-    correct: 2
+    question: "If f(x, y, z) = e^(xyz) then fₓ(2,2,2) is:",
+    options: ["4e⁸", "2e⁸", "8e⁸", "e⁸"],
+    correct: 0
   },
   {
     id: 32,
-    question: "Our participation in different levels in the larger order is known as .................",
-    options: ["Behaviour", "Efforts", "Values", "None of these"],
-    correct: 2
+    question: "If x = uv, y = u/v then ∂(x,y)/∂(u,v) is:",
+    options: ["-2u/v", "-2v/u", "0", "1"],
+    correct: 0
   },
   {
     id: 33,
-    question: "Attention and Appreciation from others",
-    options: ["Can't be continuous", "Can't ensure continuous happiness", "Create dependency on others", "All of these"],
-    correct: 3
+    question: "If f(x, y, z) = x² + xyz + z then fₓ at (1,0,1)",
+    options: ["1", "2", "3", "0"],
+    correct: 1
   },
   {
     id: 34,
-    question: "The programme for health and samyam leads to feeling of ............in family.",
-    options: ["Prosperity", "Happiness", "Both the Happiness and Prosperity", "None of these"],
-    correct: 2
+    question: "If z = log(x² + y²) then z_y(1,1) is:",
+    options: ["1", "2", "0", "3"],
+    correct: 0
   },
   {
     id: 35,
-    question: "Production and work for physical facilities leads to ............ in family and ............. with nature.",
-    options: ["Prosperity, Existence", "Happiness, Existence", "Prosperity, Co-existence", "Happiness, Co-existence"],
+    question: "If J₁ = ∂(u,v)/∂(x,y), J₂ = ∂(x,y)/∂(u,v) then J₁J₂ is:",
+    options: ["2", "0", "1", "-1"],
     correct: 2
   },
   {
     id: 36,
-    question: "Education has two domains- Value Domain and Skill Domain. Which of the following is true?",
-    options: ["Value domain is the part of the skill domain", "Value domain is in conflict with skill domain", "The value domain deals with the understanding part, while the skill domain deals with the learning part.", "The value domain deals with the learning part, while the skill domain deals with the understanding part."],
-    correct: 2
+    question: "If f(x, y) = sin(x) + cos(y) + xy² where x = cos(t); y = sin(t), then df/dt at t = π/2 is:",
+    options: ["2", "-2", "1", "0"],
+    correct: 1
   },
   {
     id: 37,
-    question: "Value Education leads human being to",
-    options: ["Conflicts", "Confusion", "Harmony", "All of these"],
-    correct: 2
+    question: "The Jacobian of p, q, r w.r.t x, y, z given p = x + y + z, q = y + z, r = z is:",
+    options: ["0", "1", "2", "-1"],
+    correct: 1
   },
   {
     id: 38,
-    question: "It is the second level of living",
-    options: ["Individual", "Society", "Nature", "Family"],
-    correct: 3
+    question: "If f(x, y, z) = x² + y² + z² then f_xx(2,4,2) is:",
+    options: ["1", "2", "4", "8"],
+    correct: 1
   },
   {
     id: 39,
-    question: "One of the undesirable common habits with us is that we have a tendency to suspect others ................",
-    options: ["Intention", "Competence", "Both intention and competence", "None of these"],
+    question: "Given u = x + y, v = xy then the Jacobian ∂(u,v)/∂(x,y) is:",
+    options: ["x + y", "0", "x - y", "1"],
     correct: 2
   },
   {
     id: 40,
-    question: "Which of the following is not a dimension of human being?",
-    options: ["Society", "Thought", "Behaviour", "Realization"],
-    correct: 0
-  },
-  {
-    id: 41,
-    question: "In the process of self-exploration we will not verify on the basis of ................",
-    options: ["Others perception", "Scriptures", "Reading from instruments", "All of these"],
-    correct: 3
-  },
-  {
-    id: 42,
-    question: "It is the fourth level of living",
-    options: ["Society", "Nature", "Individual", "Family"],
-    correct: 1
-  },
-  {
-    id: 43,
-    question: "The result of self-exploration is............",
-    options: ["Realization", "Right understanding", "Both Realization and Right understanding", "None of these"],
+    question: "If z = 6x²y² + 8x² then ∂z/∂x is:",
+    options: ["6y² + 16x", "6x² + 8x²", "12xy² + 16x", "6x² + 6y² + 8x²"],
     correct: 2
   },
   {
-    id: 44,
-    question: "The process of verification of any proposal can be useful when verified",
-    options: ["At One's own right", "On the basis of reading from the instruments", "On the basis of readings from the books", "On the basis of others' perception and understanding"],
+    id: 41,
+    question: "If f(x, y) = 2x³ - 4y², what is the value of fₓ and f_y at (3,2)",
+    options: ["fₓ = 54, f_y = -16", "fₓ = 16, f_y = -54", "fₓ = 54, f_y = 0", "fₓ = -54, f_y = -16"],
     correct: 0
   },
   {
+    id: 42,
+    question: "If u = x + y and v = x - y the value of J(u,v/x,y) is:",
+    options: ["-2", "2", "1", "0"],
+    correct: 0
+  },
+  {
+    id: 43,
+    question: "If f(x, y) = x²y + x where x = t and y = t² then the value of df/dt when t = 1 is:",
+    options: ["2", "4", "1", "5"],
+    correct: 1
+  },
+  {
+    id: 44,
+    question: "If f(x, y) = sin(xy + x³y) then fₓ at (0,1) is:",
+    options: ["2", "5", "1", "0"],
+    correct: 2
+  },
+  {
     id: 45,
-    question: "Self-exploration is the dialogue between 'what you are' and",
-    options: ["'what you want to be'", "'what others want you to be'", "'what society wants you to be'", "All of these"],
+    question: "If z = 3xy + 4x², then value of ∂z/∂x is:",
+    options: ["3y + 8x", "3x + 4x²", "3xy + 8x", "3y + 3x + 8x"],
     correct: 0
   },
   {
     id: 46,
-    question: "Continuous happiness and prosperity are the .................",
-    options: ["Impractical thought", "Impossible desires", "Basic human aspirations", "None of these"],
+    question: "Given f_xx = x², f_xy = 8, f_yy = y², then the nature of the stationary point at (√2, √2) is:",
+    options: ["Maximum", "Minimum", "Saddle point", "No maxima & minima"],
     correct: 2
   },
   {
     id: 47,
-    question: "To be wealthy is .................. condition in the modern world to be happy.",
-    options: ["The most important", "The true", "Not essential", "Fake"],
+    question: "If f(x, y) = x + y, where x = sin t; y = cos t then the value of df/dt at t = π/2",
+    options: ["2", "-2", "1", "0"],
     correct: 3
   },
+
+  // UNIT-III: Ordinary Differential Equations
   {
     id: 48,
-    question: "Being happy ............ good-luck and lot of external circumstances.",
-    options: ["Means", "Depends on", "Does not depend on", "None of these"],
-    correct: 2
-  },
-  {
-    id: 49,
-    question: "Which one of the following is true?",
-    options: ["A human being needs both, relationship as well as physical facilities. One cannot replace the other.", "If a human being has abundant (plentiful) of physical facilities, her/his prosperity is ensured.", "If a human being has abundant (plentiful) of physical facilities, his/her happiness is ensured.", "If a human being is happy in continuity, she/he does not need physical facilities anymore."],
+    question: "The order and degree of the differential equation (d²y/dx²)³ + (dy/dx)² + y = 0 is _______ and _______.",
+    options: ["1 and 3", "2 and 3", "2 and 2", "3 and 3"],
     correct: 1
   },
   {
+    id: 49,
+    question: "The order and degree of the differential equation [1 + (dy/dx)²]^(3/2) = d²y/dx² is _____ and ______.",
+    options: ["1 and 1", "2 and 1", "2 and 2", "1 and 3"],
+    correct: 2
+  },
+  {
     id: 50,
-    question: "Living with Physical Comforts only means ...........",
-    options: ["Animal Consciousness", "God Consciousness", "Human Consciousness", "Real Consciousness"],
+    question: "The order and degree of the differential equation: d²y/dx² = [(dy/dx)² + 1]/x are ________ and ________.",
+    options: ["2 and 1", "1 and 2", "2 and 3", "2 and 2"],
     correct: 0
   },
   {
     id: 51,
-    question: "The feeling of producing/having more than required physical facility is",
-    options: ["Prosperity", "Happiness", "Success", "Satisfaction"],
+    question: "The differential equation having order 3 and degree 2 is ______.",
+    options: ["(d³y/dx³)² + x(dy/dx)² = 0", "d³y/dx³ + dy/dx + y = 0", "d³y/dx³ + y = 0", "d³y/dx³ + (dy/dx)² = 0"],
     correct: 0
   },
   {
     id: 52,
-    question: "To verify the proposal or assumption through self exploration leads to",
-    options: ["Assuming", "Knowing", "Realizing", "Preconditioning"],
-    correct: 1
+    question: "The differential equation having order 2 and degree 1 is _______.",
+    options: ["(d²y/dx²)³ + (dy/dx)² = 0", "d²y/dx² + √(dy/dx) = 0", "d²y/dx² + x(dy/dx) + y = 0", "(d²y/dx²)² + dy/dx = 0"],
+    correct: 2
   },
   {
     id: 53,
-    question: "Which are the four levels of living?",
-    options: ["Individual, family, society, nature", "Thought, behaviour, work, realization", "Material, pranic, animal, human", "None of these"],
+    question: "The integrating factor (I.F.) for dy/dx + (2/x)y = sin x is:",
+    options: ["x²", "e²ˣ", "1/x²", "x²"],
     correct: 0
   },
   {
     id: 54,
-    question: "If something is .................. to us, without any force or compulsion, then it is often correct, and does not change with people and time.",
-    options: ["Not acceptable", "Less acceptable", "Completely acceptable", "Naturally acceptable"],
-    correct: 3
+    question: "The integrating factor for dy/dx + y tan x = x is:",
+    options: ["sec x", "sec² x", "tan x", "eˣ ᵗᵃⁿ ˣ"],
+    correct: 0
   },
   {
     id: 55,
-    question: "The value of any unit in this existence is in its ........................ in the larger order of which it is a part.",
-    options: ["Participation", "Existence", "Performance", "Appearance"],
+    question: "For Bernoulli DE dy/dx + P(x)y = Q(x)yⁿ, the linearizing variable is:",
+    options: ["y¹⁻ⁿ", "yⁿ⁻¹", "yⁿ", "y⁻ⁿ"],
     correct: 0
   },
   {
     id: 56,
-    question: "The four dimensions of human being are thought, ..................., work and realization",
-    options: ["Action", "Speaking", "Behaviour", "Performance"],
-    correct: 2
+    question: "Which equation is exact?",
+    options: ["(y cos x)dx + (x sin y)dy = 0", "(2y)dx + (3x)dy = 0", "(x² - y)dx + (y²)dy = 0", "(eˣy)dx + (eˣ)dy = 0"],
+    correct: 3
   },
   {
     id: 57,
-    question: "On continued basis we should examine our ..............",
-    options: ["Thought system", "Performance system", "Belief system", "None of these"],
-    correct: 2
+    question: "The differential equation (2xy)dx + (x² + 1)dy = 0 is exact because __________.",
+    options: ["∂M/∂y = 2x and ∂N/∂x = 2x", "∂M/∂x = ∂N/∂y", "∂M/∂x = 2y and ∂N/∂x = 1", "Both M(x, y) and N(x, y) are differentiable functions of x and y"],
+    correct: 0
   },
   {
     id: 58,
-    question: "Two basic things in the content of self-exploration are to know my basic desires in may life and the second is to know how to .......................",
-    options: ["Perform these", "Remove these", "Fulfill these", "None of these"],
+    question: "Which of the following function is the solution of the differential equation y' + y = 0.",
+    options: ["y = e²ˣ", "y = eˣ", "y = e⁻ˣ", "y = e⁻²ˣ"],
     correct: 2
   },
   {
     id: 59,
-    question: "Expression of thought is in the form of ............................",
-    options: ["Behaviour", "Work", "Realization", "Behaviour and Work"],
+    question: "Which of the following function is not a solution of the differential equation y'' + y = 0?",
+    options: ["y = 15 cos x", "y = 2 sin x", "y = cos x", "y = sin 2x"],
     correct: 3
   },
   {
     id: 60,
-    question: "Universal, rational, and verifiable are the ................... of value education.",
-    options: ["Needs", "Outcomes", "Basic guidelines", "None of these"],
+    question: "The complementary function of the differential equation (D - 3)²y = e³ˣ is:",
+    options: ["(C₁ + C₂)xe³ˣ", "(C₁ + C₂x)e³ˣ", "(C₁e³ˣ + C₂e⁻³ˣ)", "(C₁x + C₂x²)e³ˣ"],
     correct: 1
   },
   {
     id: 61,
-    question: "The value of entity is decided on the basis of ....................",
-    options: ["Participation in the larger order", "MRP", "Cost", "Physical properties"],
-    correct: 0
+    question: "The differential equation whose auxiliary equation has the roots 0, 1, -1 is:",
+    options: ["(D³ + 2D² + D)y = 0", "(D³ - D² - D)y = 0", "(D³ - 2D² - D)y = 0", "(D³ - D)y = 0"],
+    correct: 3
   },
   {
     id: 62,
-    question: "Value education helps us to correctly identify our ................",
-    options: ["Goals", "Aspirations", "Desires", "All of these"],
-    correct: 3
+    question: "The differential equation whose auxiliary equation has the roots 1, -1 is:",
+    options: ["y'' - y = 0", "y'' + y = 0", "y' + y = 0", "y'' - y' - y = 0"],
+    correct: 0
   },
   {
     id: 63,
-    question: "The purpose of the value education is to ....................",
-    options: ["Foster universal values", "Make the syllabus easy for the students to learn", "Develop values in individuals", "Both foster universal values and develop values in individuals"],
-    correct: 3
+    question: "The particular integral of (D² + 3D - 4)y = 12e²ˣ is:",
+    options: ["e²ˣ", "2e²ˣ", "3e²ˣ", "e²ˣ/2"],
+    correct: 0
   },
   {
     id: 64,
-    question: "A harmonious world is created by values at 4 levels. These are.....................",
-    options: ["Home, Family, Society, Nation", "Individual, Family, Society, Existence", "School, Home, Office, Temple", "None of these"],
-    correct: 1
+    question: "y = C₁e⁻⁶ˣ + C₂e²ˣ is the general solution of the equation:",
+    options: ["y'' + 4y' - 12y = 0", "y'' + 4y' + 12y = 0", "y'' - 4y' + 12y = 0", "y'' - 4y' - 12y = 0"],
+    correct: 0
   },
   {
     id: 65,
-    question: "The content of self-exploration is to understand the desire and ............. of human being.",
-    options: ["Potential", "Programme", "Purpose", "None of these"],
+    question: "The integrating factor for the differential equation: dy/dx + y·(1/x) = log x is:",
+    options: ["log x", "x", "1/x", "x²"],
     correct: 1
   },
   {
     id: 66,
-    question: "Human-Rest of the nature interaction is called as ............",
-    options: ["Behaviour", "Production", "Work", "Realization"],
+    question: "For the differential equation y'' - y = eˣ, choose y₁ = eˣ, y₂ = e⁻ˣ. Then the Wronskian W is:",
+    options: ["1", "0", "-2", "eˣ - e⁻ˣ"],
     correct: 2
   },
   {
     id: 67,
-    question: "Clarity and Identification of comprehensive human goals in the light of right understanding is called ........................",
-    options: ["Science", "Work", "Wisdom", "Behaviour"],
-    correct: 2
+    question: "The solution of y'' + y = 0 is:",
+    options: ["y = C₁eˣ + C₂e⁻ˣ", "y = C₁ cos x + C₂ sin x", "y = C₁x + C₂", "y = C₁eⁱˣ + C₂e⁻ⁱˣ"],
+    correct: 1
   },
   {
     id: 68,
-    question: "Comprehensive human goals are fulfilled with the help of ............",
-    options: ["Wisdom", "Science", "Precondition and sensation", "All of these"],
-    correct: 1
+    question: "The partial differential equation of the expression z = ax + by, where a and b are arbitrary constants, is:",
+    options: ["z = px - qy", "z = p + q", "z = pq", "z = px + qy"],
+    correct: 3
   },
   {
     id: 69,
-    question: "To ensure justice from family to world family is called ..................",
-    options: ["Production", "Science", "Wisdom", "Undivided human society"],
-    correct: 3
+    question: "Which of the following equations is a parabolic partial differential equation?",
+    options: ["∂²u/∂x² + ∂²u/∂y² = 0", "∂²u/∂x² + ∂²u/∂y² = f(x, y)", "a²(∂²u/∂x²) = ∂u/∂t", "∂²u/∂x² = 4(∂²u/∂t²)"],
+    correct: 2
   },
   {
     id: 70,
-    question: "Ensuring mutual fulfilment and mutual prosperity from family to world family is .........",
-    options: ["Science", "Wisdom", "Undivided human society", "Universal human order"],
-    correct: 3
+    question: "The partial differential equation of the expression 2z = ax² + by² where a and b are arbitrary constants, is:",
+    options: ["2z = px + qy", "z = p + q", "z = py + qx", "z = px - qy"],
+    correct: 0
   },
   {
     id: 71,
-    question: "Which among the following is not a comprehensive human goal?",
-    options: ["Right understanding in every individual", "Mastery and complete control over nature", "Fearlessness in society", "Harmony in nature"],
-    correct: 1
+    question: "The following second order partial differential equation is: 2x(∂²u/∂x²) + 3x(∂²u/∂y²) = ∂u/∂x + ∂u/∂y",
+    options: ["parabolic", "hyperbolic", "elliptic", "circular"],
+    correct: 2
   },
   {
     id: 72,
-    question: "Ensuring the concept of undivided society and universal human order from generation to generation is called .............",
-    options: ["Wisdom", "Undivided human society", "Universal human order", "Human Tradition"],
-    correct: 3
+    question: "The partial differential equation of the expression z = f(x), where f(x) is an arbitrary function, is:",
+    options: ["z = ∂z/∂x", "∂z/∂y = 0", "∂z/∂x + ∂z/∂x = 0", "z = ∂z/∂y"],
+    correct: 1
   },
   {
     id: 73,
-    question: "Transformation through Human Education includes",
-    options: ["Personal Transformation", "Societal Transformation", "Both Personal as well as societal transformation", "Materialistic transformation"],
-    correct: 2
+    question: "The following second order partial differential equation is: x(∂²u/∂x²) - x²(∂u/∂x) + ∂u/∂y = 0",
+    options: ["parabolic", "hyperbolic", "elliptic", "circular"],
+    correct: 0
   },
   {
     id: 74,
-    question: "In society, obsession for consumption, profit and sensory pleasure is more due to",
-    options: ["Knowledge", "Assumption", "Recognition", "Fulfilment"],
-    correct: 1
+    question: "The partial differential equation of the expression z = f(x + y), where f(x + y) is an arbitrary function, is:",
+    options: ["p - q = 0", "p + q = 0", "z = p + q", "z = p - q"],
+    correct: 0
   },
   {
     id: 75,
-    question: "Sound, Touch, Taste, Smell, and Form are ..............",
-    options: ["Traps", "Innate faculty", "Sensations", "Preconditioning"],
-    correct: 2
+    question: "The following second order partial differential equation is: xy(∂²u/∂x∂y) - x²(∂u/∂x) + ∂u/∂y = cos(2x + 3y)",
+    options: ["parabolic", "hyperbolic", "elliptic", "circular"],
+    correct: 1
   },
   {
     id: 76,
-    question: "Definite completion point of feelings is ................",
-    options: ["Outside", "Within", "Nowhere", "Others"],
-    correct: 1
+    question: "The partial differential equation of the expression z = aeˣ - beʸ, where a and b are arbitrary constants, is:",
+    options: ["z = p + q", "z = p - q", "p + q = 0", "p - q = 0"],
+    correct: 3
   },
   {
     id: 77,
-    question: "An individual aspiring for the universal human order will be ..............",
-    options: ["More responsible socially and ecologically", "More rich", "More powerful", "None of these"],
-    correct: 0
+    question: "Which of the following equations is a hyperbolic partial differential equation?",
+    options: ["∂²u/∂x² + ∂²u/∂y² = 0", "∂²u/∂x² + ∂²u/∂y² = f(x, y)", "a²(∂²u/∂x²) = ∂u/∂t", "∂²u/∂x² = 4(∂²u/∂t²)"],
+    correct: 3
   },
   {
     id: 78,
-    question: "\"All are our own, all are interconnected and inter dependent\" means ............",
-    options: ["Oneness", "Worship", "Ease", "None of these"],
-    correct: 0
+    question: "The partial differential equation of the expression z = ax + beʸ, where a and b are arbitrary constants, is:",
+    options: ["z = p + q", "z = px + q", "z = p + qy", "z = p - q"],
+    correct: 1
   },
   {
     id: 79,
-    question: "............... and ....................... are the basis of undivided society",
-    options: ["Love and Oneness", "Care and guidance", "Affection and Respect", "None of these"],
-    correct: 0
-  },
-  {
-    id: 80,
-    question: "In Teacher – Student relationship, the teacher should have the feeling of ........... for the students.",
-    options: ["Love", "Guidance", "Care", "Gratitude"],
-    correct: 1
-  },
-  {
-    id: 81,
-    question: "In Teacher – Student relationship, the students should have the feeling of ........... for the Teachers.",
-    options: ["Love", "Guidance", "Care", "Gratitude"],
-    correct: 3
-  },
-  {
-    id: 82,
-    question: "For relationship among siblings, there is a need for the feelings of .........",
-    options: ["Love and Trust", "Care and affection", "Respect", "All of these"],
-    correct: 3
-  },
-  {
-    id: 83,
-    question: "What are the feelings that remain as base of all relationships?",
-    options: ["Reverence, Glory, Gratitude", "Trust, Respect, Affection", "Care, Guidance, Affection", "Trust, Reverence, Glory"],
-    correct: 1
-  },
-  {
-    id: 84,
-    question: "Moral value is combination of ...............",
-    options: ["Right Speech, Right Action", "Right Vision, Right Resolve", "Right Livelihood, Right Effort", "Right Awareness, Right Concentration"],
-    correct: 0
-  },
-  {
-    id: 85,
-    question: "Meditation includes .........................",
-    options: ["Right Speech, Right Action", "Right Vision, Right Resolve", "Right Livelihood, Right Effort", "Right Awareness, Right Concentration"],
-    correct: 3
-  },
-  {
-    id: 86,
-    question: "Belief centric wisdom is ....................",
-    options: ["Knowledge based on listening", "Knowledge based on self realization of existential reality", "Reasoning based knowledge", "None of these"],
-    correct: 0
-  },
-  {
-    id: 87,
-    question: "Logic centric wisdom is ......................",
-    options: ["Knowledge based on listening", "Knowledge based on self realization of existential reality", "Reasoning based knowledge", "None of these"],
+    question: "Which of the following partial differential equations is not an elliptic partial differential equation?",
+    options: ["∂²u/∂x² + ∂²u/∂y² = 0", "∂²u/∂x² + ∂²u/∂y² = f(x, y)", "a²(∂²u/∂x²) = ∂u/∂t", "x²(∂²u/∂x²) + 4y²(∂²u/∂t²) = 4xy"],
     correct: 2
   },
   {
-    id: 88,
-    question: "Realization centric wisdom is ................",
-    options: ["Knowledge based on listening", "Knowledge based on self realization of existential reality", "Reasoning based knowledge", "None of these"],
+    id: 80,
+    question: "The partial differential equation of the expression z = xeᵃ - by, where a and b are arbitrary constants, is:",
+    options: ["z = px - qy", "z = px + qy", "z = p + q", "px + qy = 0"],
+    correct: 0
+  },
+  {
+    id: 81,
+    question: "The following second order partial differential equation is: y²(∂²u/∂x²) - 2xy(∂²u/∂x∂y) + x²(∂²u/∂y²) - x²(∂u/∂x) + ∂u/∂y = 0",
+    options: ["parabolic", "hyperbolic", "elliptic", "circular"],
+    correct: 0
+  },
+  {
+    id: 82,
+    question: "The partial differential equation of the expression z = eʸg(x), where g(x) an arbitrary function, is:",
+    options: ["z = ∂z/∂y", "z = ∂z/∂x", "∂z/∂x = 0", "∂z/∂y = 0"],
+    correct: 0
+  },
+  {
+    id: 83,
+    question: "Which of the following equation is not a hyperbolic partial differential equation?",
+    options: ["-2(∂²u/∂x²) - x²(∂²u/∂y²) = 0", "∂²u/∂x² - ∂²u/∂y² = 0", "xy(∂²u/∂x²) - 3xy(∂²u/∂y²) = 0", "∂²u/∂x² - y²(∂²u/∂y²) = 0"],
+    correct: 0
+  },
+  {
+    id: 84,
+    question: "The partial differential equation of the expression 2z = ax² + by, where a and b are arbitrary constants, is:",
+    options: ["2z = px + 2qy", "z = px + qy", "z = 2px + qy", "z = px - qy"],
+    correct: 2
+  },
+  {
+    id: 85,
+    question: "The following second order partial differential equation is: y²(∂²u/∂x²) - 4xy(∂²u/∂x∂y) - 4x²(∂²u/∂y²) - sin²(xy) = 0",
+    options: ["parabolic", "hyperbolic", "elliptic", "circular"],
     correct: 1
   },
   {
+    id: 86,
+    question: "The partial differential equation of the expression z = ay + bx, where a and b are arbitrary constants, is:",
+    options: ["z = px + qy", "z = qx + py", "z = p + q", "z = px - qy"],
+    correct: 1
+  },
+  {
+    id: 87,
+    question: "Which of the following partial differential equation is an elliptic partial differential equation?",
+    options: ["-2(∂²u/∂x²) - x²(∂²u/∂y²) = 0", "∂²u/∂x² - ∂²u/∂y² = 0", "xy(∂²u/∂x²) - 3xy(∂²u/∂y²) = 0", "∂²u/∂x² - y²(∂²u/∂y²) = 0"],
+    correct: 0
+  },
+  {
+    id: 88,
+    question: "f(x, y) = x² + xyz + z Find fₓ at (1,1,1)",
+    options: ["0", "1", "3", "-1"],
+    correct: 2
+  },
+  {
     id: 89,
-    question: "Non-violence means not hurting anyone by ..............",
-    options: ["Body", "Mind", "Speech and words", "All of these"],
+    question: "f(x, y) = sin(xy) + x² ln(y) Find f_yx at (0, π/2)",
+    options: ["33", "0", "3", "1"],
     correct: 3
   },
   {
     id: 90,
-    question: "Liberation means ...........",
-    options: ["To see the existence clearly", "To see the reality as it is", "To be rid of all types of misunderstanding, confusions", "All of these"],
-    correct: 3
+    question: "The one-dimensional wave equation is:",
+    options: ["∂u/∂t = c²(∂²u/∂x²)", "∂²u/∂t² = c²(∂²u/∂x²)", "∂²u/∂t² = ∂²u/∂x²", "∂u/∂t = ∂u/∂x"],
+    correct: 1
   },
   {
     id: 91,
-    question: "It is natural for ................... to slowly deteriorate",
-    options: ["Physical things/Physical facilities", "Happiness", "Feelings", "Relationship"],
+    question: "Which of the following is the standard form of the Laplace equation in 2D?",
+    options: ["∂²u/∂x² + ∂²u/∂y² = 0", "∂u/∂x + ∂u/∂y = 0", "∂u/∂x = ∂u/∂y", "∂²u/∂x² - ∂²u/∂y² = 0"],
     correct: 0
   },
-
-  // Unit 2 MCQs
   {
     id: 92,
-    question: "Employing the body physically for the production and maintenance of physical facilities is called as ---------------",
-    options: ["Asan", "Pranayam", "Labour", "None of these"],
+    question: "Which type of PDE is the wave equation?",
+    options: ["Parabolic", "Elliptic", "Hyperbolic", "None of the above"],
     correct: 2
   },
   {
     id: 93,
-    question: "Trust, Respect, Happiness, etc., are the needs of ................",
-    options: ["The Body", "The Self (I)", "The Self and the Body", "None of these"],
+    question: "The direct integration method is applicable when the PDE is:",
+    options: ["Linear and homogeneous", "Linear and first order", "Non-linear", "Of second order with constant coefficients"],
     correct: 1
   },
   {
     id: 94,
-    question: "The activities of the body (in response) are .................",
-    options: ["Assuming and Knowing", "Assuming and Fulfilling", "Recognising and Fulfilling", "Knowing and Fulfilling"],
-    correct: 2
+    question: "Direct integration method solves PDEs by:",
+    options: ["Using Fourier series", "Directly integrating partial derivatives step by step", "Transforming to ODEs", "Using separation of variables"],
+    correct: 1
   },
+
+  // UNIT-IV: Multiple Integrals
   {
     id: 95,
-    question: "'Seer' means the one that .................",
-    options: ["Does something", "understands", "Experience", "All of these"],
-    correct: 1
+    question: "The value of ∫₀¹ ∫₀ˣ dy dx is:",
+    options: ["1", "2", "0", "1/2"],
+    correct: 3
   },
   {
     id: 96,
-    question: "Who is responsible for happiness and unhappiness?",
-    options: ["Body", "Self", "Outside situations", "Society"],
-    correct: 1
-  },
-  {
-    id: 97,
-    question: "Human body is an instrument to facilitate",
-    options: ["Sensations", "Preconditioning", "Right Understanding", "Assumptions"],
-    correct: 2
-  },
-  {
-    id: 98,
-    question: "When we assume something on the basis of prevailing notion, then it is called as",
-    options: ["Preconditioning", "Sensation", "Right Understanding", "Natural Acceptance"],
+    question: "The value of ∫₀¹ ∫₀^√x dy dx = ________________",
+    options: ["2/3", "3/2", "1/3", "3"],
     correct: 0
   },
   {
+    id: 97,
+    question: "The value of ∫₀^(π/2) ∫₁² r dr dθ = ______________",
+    options: ["π/4", "π", "π/2", "3π/4"],
+    correct: 3
+  },
+  {
+    id: 98,
+    question: "Which of the following formula can be used to find area of a plane region in the cartesian form?",
+    options: ["A = ∬ x dx dy", "A = ∬ xy dx dy", "A = ∬ f(x, y)dx dy", "A = ∬ dx dy"],
+    correct: 3
+  },
+  {
     id: 99,
-    question: "Behaviour on the basis of right understanding and realization is called",
-    options: ["Confused behaviour", "Wrong behaviour", "Self organized behaviour", "All of these"],
-    correct: 2
+    question: "The value of ∫₋₁¹ ∫₀¹ ∫₋₁⁰ dx dy dz =",
+    options: ["2", "0", "-1", "1"],
+    correct: 0
   },
   {
     id: 100,
-    question: "The activity of selecting/tasting is",
-    options: ["Continuous", "Variable", "Uncertain", "None of these"],
+    question: "∫₀¹ ∫₀^(x²) dy dx represents:",
+    options: ["The area bounded by the parabola y = x², the line x = 1 and the x-axis.", "The area bounded by the parabolas y = x² and y² = x.", "The area bounded by the parabola y = x², the line y = 1 and the y-axis.", "The area bounded by the parabola y = x², the line y = 1 and the x-axis"],
     correct: 0
   },
   {
     id: 101,
-    question: "The power/force for the activity of analyzing is",
-    options: ["Desire", "Expectations", "Realization", "Thoughts"],
-    correct: 3
+    question: "∫₀¹ ∫₀ˣ eʸ dy dx =",
+    options: ["e + 2", "e", "e - 2", "2e"],
+    correct: 2
   },
   {
     id: 102,
-    question: "When there is harmony among the parts of the body, then it is called a status of",
-    options: ["Sanyam", "Swasthya", "Both Sanyam and Swasthya", "None of these"],
-    correct: 1
+    question: "The value of ∫₀ᶜ ∫₀ᵇ ∫₀ᵃ dz dy dx is:",
+    options: ["ab/c", "ab/(2c)", "abc", "ab"],
+    correct: 2
   },
   {
     id: 103,
-    question: "Harmony should be maintained between",
-    options: ["Body and Life", "Self and Society", "Society and Environment", "All of these"],
-    correct: 3
+    question: "Area of a region R in terms of polar co-ordinate is:",
+    options: ["A = ∬ᴿ r dr dθ", "A = ∬ᴿ dr dθ", "A = ∬ᴿ r² dr dθ", "A = ∬ᴿ (r + 1) dr dθ"],
+    correct: 0
   },
   {
     id: 104,
-    question: "The statement \"all parts of the body performing their expected functions\" is related with",
-    options: ["Proper upkeep", "Self regulation", "Sanyam", "Swasthya"],
+    question: "The value of ∫₀¹ ∫₀² xy dx dy is:",
+    options: ["2", "4", "0", "1"],
     correct: 3
   },
   {
     id: 105,
-    question: "........... is the central to the human existence",
-    options: ["Body", "Self", "Physical facilities", "None of these"],
-    correct: 1
+    question: "After changing the order of integration, the integral value of ∫₀^∞ ∫ₓ^∞ (e⁻ʸ/y) dy dx is same as:",
+    options: ["∫₀^∞ ∫₀ʸ (e⁻ʸ/y) dx dy", "∫₀^∞ ∫₀^∞ (e⁻ʸ/y) dx dy", "∫₀ˣ ∫₀ʸ (e⁻ʸ/y) dx dy", "∫₀¹ ∫ₓ^∞ (e⁻ʸ/y) dx dy"],
+    correct: 0
   },
   {
     id: 106,
-    question: "Realization is the activity of",
-    options: ["Self", "Body", "Both Self and Body", "None of these"],
-    correct: 0
+    question: "In polar form, the integral ∫₀^∞ ∫₀^∞ e⁻⁽ˣ²⁺ʸ²⁾ dx dy is equal to:",
+    options: ["∫₀^(π/2) ∫₀^∞ e⁻ʳ² dr dθ", "∫₀^(π/2) ∫₀^∞ e⁻ʳ dr dθ", "∫₀^(π/2) ∫₀^∞ e⁻⁽ʳ²⁺θ²⁾ dr dθ", "∫₀^(π/2) ∫₀^∞ re⁻ʳ² dr dθ"],
+    correct: 3
   },
   {
     id: 107,
-    question: "\"Seeing the Self by the Self\" means",
-    options: ["The conscious observation of the consciousness", "The conscious observation of the material", "The conscious observation of the co-existence", "None of these"],
-    correct: 0
+    question: "The value of γ(1/2) =",
+    options: ["√π/2", "√π", "√π/2", "π/2"],
+    correct: 1
   },
   {
     id: 108,
-    question: "Activities of the body are",
-    options: ["Temporary in Time", "Continuous in Time", "Discrete in nature", "None of these"],
+    question: "Which of the following is true?",
+    options: ["γ(n + 1) = nγ(n)", "γ(n - 1) = nγ(n)", "γ(n + 1) = n + 2γ(n)", "γ(n + 2) = nγ(n)"],
     correct: 0
   },
   {
     id: 109,
-    question: "............ is central to existence",
-    options: ["Body", "Physical facility", "Co-existence", "Self"],
+    question: "The value of ∫₀^(π/2) sin³x cos⁴x dx is:",
+    options: ["3π/280", "2/3", "2/35", "35/2"],
     correct: 2
   },
   {
     id: 110,
-    question: "Which of the following does not lead right understanding in the Self (I)",
-    options: ["A process of do's don'ts, in which we assume what is being said without verification", "A process of self-verification on your own right", "Verification of the proposals on the basis of natural acceptance", "Verification through experiential validation"],
+    question: "The value of β(3, 2) is:",
+    options: ["1/12", "1/2", "1/10", "1/24"],
     correct: 0
   },
   {
     id: 111,
-    question: "Which one of the following is correct?",
-    options: ["Self = Body", "Self and Body are in co-existence", "Needs of the Self and Body are same", "All are correct"],
-    correct: 1
+    question: "For any m > 0, β(m, 1) =",
+    options: ["1", "m", "0", "1/m"],
+    correct: 3
   },
   {
     id: 112,
-    question: "Need of the Self is",
-    options: ["Temporary", "Quantitative", "Qualitative", "None of these"],
-    correct: 2
+    question: "If m, n > 0 then β(m,n+1)/β(m+1,n) equals:",
+    options: ["m/n", "n/m", "1", "0"],
+    correct: 1
   },
   {
     id: 113,
-    question: "The 'I' is",
-    options: ["The doer", "The enjoyer", "The Seer", "All of these"],
-    correct: 3
+    question: "The value β(1/2, 1/2) is:",
+    options: ["1", "π", "-1", "√π"],
+    correct: 1
   },
   {
     id: 114,
-    question: "The responses of the Self are:",
-    options: ["Knowing and Fulfilling", "Knowing, Assuming, Recognising, and Fulfilling", "Knowing and Recognising", "Knowing, Recognising and Fulfilling"],
+    question: "The value of ∫₀^∞ e⁻ˣ² dx is:",
+    options: ["√π", "√π/2", "√π/2", "π/2"],
     correct: 1
-  },
-  {
-    id: 115,
-    question: "The needs of the Self are fulfilled by",
-    options: ["Right Understanding and Right Feeling", "Right Feeling", "Right Understanding", "Cannot be decided"],
-    correct: 0
-  },
-  {
-    id: 116,
-    question: "Which is material unit?",
-    options: ["Body", "Physical facility", "Physiochemical things", "All of these"],
-    correct: 3
-  },
-  {
-    id: 117,
-    question: "Which among the following is not an activity of the body",
-    options: ["Assuming", "Recognizing", "Fulfilling", "All of these"],
-    correct: 0
-  },
-  {
-    id: 118,
-    question: "Self organization means",
-    options: ["Innateness", "Co-existence", "Natural characteristics", "Form"],
-    correct: 0
-  },
-  {
-    id: 119,
-    question: "The Body is a ............. unit; while the Self is a .................. unit.",
-    options: ["Consciousness and Qualitative", "Material, Consciousness", "Consciousness, Material", "Quantitative, Material"],
-    correct: 1
-  },
-  {
-    id: 120,
-    question: "Which among the following is a variable unit?",
-    options: ["Form", "Co-existence", "Innateness", "All of these"],
-    correct: 0
-  },
-  {
-    id: 121,
-    question: "............ is done with the help of proper food, water and air.",
-    options: ["Protection of the boday", "Right utilization of the body", "Nourishment of the body", "Exploitation of the body"],
-    correct: 2
-  },
-  {
-    id: 122,
-    question: "What is not the indicator of good health of the Self and Body",
-    options: ["Feeling of self-regulation of the body", "Feeling of happiness and prosperity", "Feeling of jealousy, anger and competition for others", "None of these"],
-    correct: 2
-  },
-  {
-    id: 123,
-    question: "When we try to achieve happiness and prosperity by maximizing accumulation and consumption of physical facilities as our primary and only focus of life, we become ..........................",
-    options: ["Anti-social", "Anti-ecological", "Threat to human survival", "All of these"],
-    correct: 3
-  },
-  {
-    id: 124,
-    question: "On having realization and understanding, we get",
-    options: ["Assurance", "Satisfaction", "Universality", "All of these"],
-    correct: 3
-  },
-  {
-    id: 125,
-    question: "Physical facilities are required in ..................... quantity",
-    options: ["Uncertain", "Limited", "Unlimited", "Insignificant"],
-    correct: 1
-  },
-  {
-    id: 126,
-    question: "Doer means the one who ................",
-    options: ["Understands", "Does something", "Experience", "All of these"],
-    correct: 1
-  },
-  {
-    id: 127,
-    question: "The basic unit of learning human interaction is ........................",
-    options: ["Society", "School", "Family", "Nature"],
-    correct: 2
-  },
-  {
-    id: 128,
-    question: "In Value Education 'Sanyam' means .......................",
-    options: ["Self exploration", "Self evaluation", "Self regulation", "None of these"],
-    correct: 2
-  },
-  {
-    id: 129,
-    question: "'Sanyam' is feeling of responsibility for ............... of the body",
-    options: ["Nurturing and protection", "Protection and right utilization", "Nurturing and right utilization", "Nurturing, Protection and Right Utilization"],
-    correct: 3
-  },
-  {
-    id: 130,
-    question: "The pleasure obtained from sensations is ....................",
-    options: ["Temporary and source of long lasting happiness", "Continuous and source of long lasting happiness", "Short lived and continuous", "Short lived and temporary"],
-    correct: 3
-  },
-  {
-    id: 131,
-    question: "We should make choices with external world based on our ..................",
-    options: ["Natural acceptance", "Preconditioning", "Sensations", "All of these"],
-    correct: 0
-  },
-  {
-    id: 132,
-    question: "The Self reads the ................ and gives the ................ to the body",
-    options: ["Instructions, Information", "Instructions, Sensation", "Sensation, Instruction", "Sensation, Information"],
-    correct: 2
-  },
-  {
-    id: 133,
-    question: "What leads to Resolution?",
-    options: ["Assuming", "Knowing", "Recognising", "Fulfilling"],
-    correct: 1
-  },
-  {
-    id: 134,
-    question: "Which of the following is temporary in existence?",
-    options: ["Space", "Consciousness", "Material unit", "Co-existence"],
-    correct: 2
-  },
-  {
-    id: 135,
-    question: "Which of the following is 'ever' in existence?",
-    options: ["Space", "Consciousness", "Material unit", "None of these"],
-    correct: 0
-  },
-  {
-    id: 136,
-    question: "Which of the following is continuous in existence",
-    options: ["Space", "Consciousness", "Material unit", "None of these"],
-    correct: 1
-  },
-  {
-    id: 137,
-    question: "Which among the following in not a characteristic of 'consciousnesses?",
-    options: ["Cyclic development", "Temporary", "Continuous", "Recognising"],
-    correct: 1
-  },
-  {
-    id: 138,
-    question: "........................ wants to live with continuous happiness",
-    options: ["Body", "Self", "Plant and animals", "Material unit"],
-    correct: 1
-  },
-  {
-    id: 139,
-    question: ".................... is just used as an instrument of ....................",
-    options: ["Body, Self", "Self, Body", "Physical facility, Self", "Imagination, Preconditioning"],
-    correct: 0
-  },
-  {
-    id: 140,
-    question: "Find the wrong statement from the following.",
-    options: ["Self is seer/viewer", "Self is doer (decision maker)", "Self is enjoyer (the one who experiences)", "Self is an instrument of the body"],
-    correct: 3
-  },
-  {
-    id: 141,
-    question: "Find the wrong statement",
-    options: ["'seer' means one that sees/understands", "All the 5 senses are just the instruments enable the Self to see something from outside", "All in the process of seeing, the Self is used as an instrument", "You can also see within, without using the sensations in the body."],
-    correct: 2
-  },
-  {
-    id: 142,
-    question: "Which of the following is a wrong statement?",
-    options: ["Self if the one who decides – what to do and what not to do.", "The body is used to express the decision of the Self, if required.", "Self may or may not use the body to execute its decisions", "What I think is the decision of my body."],
-    correct: 3
-  },
-  {
-    id: 143,
-    question: "Which of the following is not a correct statement as far as the relationship of the Body and Self is concerned?",
-    options: ["It is my Self that experiences happiness and unhappiness", "It is my body that enjoys the taste of food", "It is my Self that feels enthused and depressed", "It is my Self that feels angry and delighted"],
-    correct: 1
-  },
-  {
-    id: 144,
-    question: "Which among the following statement is correct about the physical facility?",
-    options: ["Physical facilities are required to fulfill the responsibility of the Self toward body", "Physical facilities are required to keep the body in good health by nurturing, protection and right utilization of the body.", "The required physical facilities could be recognised along with the required quantity for the nurturing, protection and utilization of the body", "All of these"],
-    correct: 3
-  },
-  {
-    id: 145,
-    question: "What does right utilization of body mean?",
-    options: ["Use the body as an instrument of communication (behaviour)", "Use the body as an instrument of labour/work, to obtain necessary physical facility for the body", "As an instrument for the continuity of human tradition", "All of these"],
-    correct: 3
-  },
-  {
-    id: 146,
-    question: "Right utilization ensured of",
-    options: ["Physical facilities", "Body", "Self", "All of these"],
-    correct: 3
-  },
-
-  // Unit 3 MCQs
-  {
-    id: 147,
-    question: "Transformation of the -------- in nature is more cyclical.",
-    options: ["Material things", "Plants", "Animals", "All of these"],
-    correct: 0
-  },
-  {
-    id: 148,
-    question: "Composition and de-composition is the only activity of which order?",
-    options: ["Animal", "Plant (Pranic/Bio)", "Human", "Physical"],
-    correct: 3
-  },
-  {
-    id: 149,
-    question: "In existence 'units' are",
-    options: ["Unlimited in size and also active", "Unlimited in size, but inactive", "Limited in size and also active", "Limited in size and also active"],
-    correct: 2
-  },
-  {
-    id: 150,
-    question: "Space is/are",
-    options: ["Unlimited", "All pervading", "No activity", "All of these"],
-    correct: 3
-  },
-  {
-    id: 151,
-    question: "Which order is most fulfilling by the other?",
-    options: ["Human", "Physical", "Animal", "Plant (Bio/Pranic)"],
-    correct: 1
-  },
-  {
-    id: 152,
-    question: "Natural acceptance:",
-    options: ["Does not change with time", "Does not depend on the place", "Does not depend on our past conditioning and our beliefs", "All of these"],
-    correct: 3
-  },
-  {
-    id: 153,
-    question: "Animal order is ------------ based inheritance",
-    options: ["Constitution", "Seed", "Education – Sanskar", "Breed"],
-    correct: 3
-  },
-  {
-    id: 154,
-    question: "Order of appearance of four orders:",
-    options: ["Plant, Physical, Animal, Human", "Human, Animal, Plant, Physical", "Human, Physical, Plant, Animal", "Physical, Plant, Animal, Human"],
-    correct: 3
-  },
-  {
-    id: 155,
-    question: "Right understanding and relationship leads to",
-    options: ["Individual Happiness", "Mutual prosperity", "Both", "None of these"],
-    correct: 1
-  },
-  {
-    id: 156,
-    question: "........................ is the human value which is all encompassing.",
-    options: ["Trust", "Affection", "Love", "Respect"],
-    correct: 2
-  },
-  {
-    id: 157,
-    question: "Respect means",
-    options: ["Right Evaluation", "Right Utilization", "Right judgement", "All of these"],
-    correct: 0
-  },
-  {
-    id: 158,
-    question: "One of the following is a complete value by itself.",
-    options: ["Trust", "Honesty", "Love", "Gratitude"],
-    correct: 2
-  },
-  {
-    id: 159,
-    question: "Trust implies",
-    options: ["To have the clarity that the other wants to make me happy and prosperous", "To be assured of the intention founded on understanding (not based on events)", "To see that all human beings have the same natural acceptance (intention) as me", "All of these"],
-    correct: 3
-  },
-  {
-    id: 160,
-    question: "Trust = to have the clarity that the other wants to make me..........................",
-    options: ["Happy", "Prosperous", "Happy and Prosperous", "None of these"],
-    correct: 2
-  },
-  {
-    id: 161,
-    question: "Each 'unit' is ....................",
-    options: ["Self-organized in space", "Energised and active in space", "Recognising and fulfilling its relationship with other units in space", "All of these"],
-    correct: 3
-  },
-  {
-    id: 162,
-    question: "There is ................. among all units in space.",
-    options: ["Existence", "Co-existence", "Harmony", "None of these"],
-    correct: 1
-  },
-  {
-    id: 163,
-    question: "There is a relationship of ...................... in nature.",
-    options: ["Mutual Happiness", "Mutual Prosperity", "Mutual Understanding", "Mutual Fulfilment"],
-    correct: 3
-  },
-  {
-    id: 164,
-    question: "To establish Universal Human Order, the starting point has to be ..................",
-    options: ["Individual", "Family", "Society", "Nature"],
-    correct: 0
-  },
-  {
-    id: 165,
-    question: "Which of the following is not involved in the holistic criteria for evaluation of technology?",
-    options: ["Catering to appropriate need", "To generate huge profit", "To make technology eco-friendly", "To make technology user-friendly"],
-    correct: 1
-  },
-  {
-    id: 166,
-    question: "Which of the following is the entry point in the implementation of humanistic tradition?",
-    options: ["Universal Human Order", "Humanistic Education", "Humanistic Constitution", "None of these"],
-    correct: 1
-  },
-  {
-    id: 167,
-    question: "Read the two statements given below and select the appropriate option: a) Right understanding in every individual is part of the comprehensive human goal. b) Prosperity in every family is part of the comprehensive human goal.",
-    options: ["Statement (a) is true; statement (b) is false", "Both the statements are true", "Statement (a) is false; statement (b) is true", "Both the statements are false"],
-    correct: 1
-  },
-  {
-    id: 168,
-    question: "Feeling for those who have made efforts for my excellence is",
-    options: ["Glory", "Gratitude", "Worship", "None of these"],
-    correct: 1
-  },
-  {
-    id: 169,
-    question: ".............. is feeling of responsibility and commitment for ensuring right understanding and right feeling in the self of my relative",
-    options: ["Guidance", "Respect", "Care", "Affection"],
-    correct: 0
-  },
-  {
-    id: 170,
-    question: "........... called foundation of value",
-    options: ["Love", "Respect", "Trust", "Affection"],
-    correct: 2
-  },
-  {
-    id: 171,
-    question: "I naturally feel related to others, when I have the feelings of ............. in myself for others",
-    options: ["Trust and Respect", "Pride and Ego", "Reverence and Glory", "Love and Affection"],
-    correct: 0
-  },
-  {
-    id: 172,
-    question: "Harmonious human-human relationship resulting in mutual happiness is the achievement of",
-    options: ["Love", "Respect", "Trust", "Justice"],
-    correct: 3
-  },
-  {
-    id: 173,
-    question: "If I say, 'I am good for nothing', it is a kind of",
-    options: ["Right evaluation", "Under evaluation", "Over evaluation", "None of these"],
-    correct: 1
-  },
-  {
-    id: 174,
-    question: "Everything that we see in the nature and existence is the natural expression and unfolding of this",
-    options: ["Body", "Physical facility", "Self", "Co-existence"],
-    correct: 3
-  },
-  {
-    id: 175,
-    question: "............... is central in relationship",
-    options: ["Feelings", "Trust", "Respect", "Affection"],
-    correct: 0
-  },
-  {
-    id: 176,
-    question: "The need of human being, i.e., of continuous happiness and prosperity can be fulfilled by 1. Having a lot of physical facilities 2. Sensation based living 3. Understanding co-existence 4. Having feeling and thought of co-existence",
-    options: ["1 and 2", "2 and 4", "3 and 4", "1 and 4"],
-    correct: 2
-  },
-  {
-    id: 177,
-    question: "How are the feeling and thought of co-existence expressed naturally?",
-    options: ["In the form of mutually fulfilling behaviour with human being", "In the form of mutually enriching work with rest of the nature", "In the form of participation in the larger order leading to undivided society and universal human order", "All of these"],
-    correct: 3
-  },
-  {
-    id: 178,
-    question: "Which among the following is not a 'guideline' for human values /value education subject?",
-    options: ["Universal", "A process of self-investigation and self-exploration", "Systematic and rational study of human beings vis-a-vis the rest of the existence", "Giving sermons and a set of do's and don'ts related to human values"],
-    correct: 3
-  },
-  {
-    id: 179,
-    question: "Which one of the following is not a comprehensive human goal?",
-    options: ["Right understanding in every individual", "Mastery over nature", "Feeling of prosperity in every family", "Fearlessness in society"],
-    correct: 1
-  },
-  {
-    id: 180,
-    question: "The statement \"all units in nature can be classified into 4 orders. These units and the 4 orders have definite innateness or self organization\" deals with",
-    options: ["Understanding", "Realization of co-existence", "Contemplation", "None of these"],
-    correct: 0
-  },
-  {
-    id: 181,
-    question: "The statement, \"every unit has a definite participation in existence and a definite role to play in this existence\" deals with",
-    options: ["Contemplation", "Understanding", "Realization of co-existence", "None of these"],
-    correct: 0
-  },
-  {
-    id: 182,
-    question: "The basic unit of learning human interaction is .............",
-    options: ["Society", "School", "Family", "Nature"],
-    correct: 2
-  },
-  {
-    id: 183,
-    question: "On what basis we can decide our feelings and thoughts?",
-    options: ["Right understanding/Natural acceptance", "Assumptions (preconditioning)", "Both", "None of thee"],
-    correct: 2
-  },
-  {
-    id: 184,
-    question: "Which among the following feelings is not naturally acceptable to me?",
-    options: ["The feeling of relationships", "The feeling of harmony", "The feeling of struggle", "The feeling of co-existence"],
-    correct: 2
-  },
-  {
-    id: 185,
-    question: "To which category a prosperous person belong?",
-    options: ["SVDD", "SSDD", "SSSS", "None of the above"],
-    correct: 2
-  },
-  {
-    id: 186,
-    question: "Authentication is the dynamic activity of",
-    options: ["Realization", "Contemplation", "Understanding", "Comparing"],
-    correct: 0
-  },
-  {
-    id: 187,
-    question: "All the instructions from the Self to the Body are from the activity of",
-    options: ["Selection", "Contemplation", "Realization", "None of these"],
-    correct: 0
-  },
-  {
-    id: 188,
-    question: "What is the dynamic activity of 'understanding'?",
-    options: ["Authentication", "Determination", "Imaging", "Analyzing"],
-    correct: 1
-  },
-  {
-    id: 189,
-    question: "Unanimity means",
-    options: ["Able to work together", "To live with feeling of co-existence, relationship with every unit of co-existence", "Absence of ego", "Self motivated for fulfilling of the responsibility"],
-    correct: 1
-  },
-  {
-    id: 190,
-    question: "Utility value of a unit means, it helps in",
-    options: ["Nurturing and protecting the body", "In enhancing the capacity of the body for use in societal development", "Both", "None of these"],
-    correct: 2
-  },
-  {
-    id: 191,
-    question: "Artistic value of a unit means, it helps in",
-    options: ["Protecting the physical facility", "People friendly – Facilitating behaviour (making it convenient for sharing, expressing or receiving knowledge, feeling, thought)", "Ease in Use – Facilitating work (making it convenient for usage)", "All of these"],
-    correct: 3
-  },
-  {
-    id: 192,
-    question: "There are .............. elements of justice",
-    options: ["Four", "Eight", "Three", "Five"],
-    correct: 0
-  },
-  {
-    id: 193,
-    question: "Undivided human society is the outcome of",
-    options: ["Living with justice", "Dominating human being", "Living in harmony in nature", "Developing more and more in science and technology"],
-    correct: 0
-  },
-  {
-    id: 194,
-    question: "Human Development essentially means",
-    options: ["Transformation from animal consciousness to human consciousness", "Being the best", "Making the nation a super power", "Earning more physical facilities/wealth"],
-    correct: 0
-  },
-  {
-    id: 195,
-    question: "Animal consciousness is ..................",
-    options: ["Giving priority to physical facilities, maximization of sensory pleasures and accumulation of wealth", "Giving priority to relationship, right understanding and inherent feeling of happiness", "Both", "None of these"],
-    correct: 0
-  },
-  {
-    id: 196,
-    question: "Human consciousness is ...............",
-    options: ["Giving priority to physical facilities, maximization of sensory pleasures and accumulation of wealth", "Giving priority to relationship, right understanding and inherent feeling of happiness", "Emerging more competitive and dominant on others", "None of these"],
-    correct: 1
-  },
-  {
-    id: 197,
-    question: "Behaviour and work are the outcome of",
-    options: ["Desires", "Thoughts", "Expectations", "All of these"],
-    correct: 3
-  },
-  {
-    id: 198,
-    question: "Disrespect leads to ..................",
-    options: ["Ego", "Depression", "Acrimony", "All of these"],
-    correct: 3
-  },
-  {
-    id: 199,
-    question: "........................ on intention is a major reason for problems in relationships.",
-    options: ["Trust", "Belief", "Doubt", "None of these"],
-    correct: 2
-  },
-  {
-    id: 200,
-    question: "The continuity of plant species is maintained in the nature by ........... method.",
-    options: ["Right value", "Seed conformance", "Constitution conformance", "Breed conformance"],
-    correct: 1
-  },
-  {
-    id: 201,
-    question: "The basic activities of plant (Bio or Pranic) order are ...............",
-    options: ["Selection/tasting", "Knowing/Assuming", "Recognition/Fulfilment", "Composition/Decomposition"],
-    correct: 2
-  },
-  {
-    id: 202,
-    question: "Existence means ......................",
-    options: ["Whatever that exist", "To be in harmony with whatever that exist", "Unit submerged in space", "All of these"],
-    correct: 3
-  },
-  {
-    id: 203,
-    question: "Compassion is the value at the level of .................",
-    options: ["Individual/self", "Family/Human-human relationship", "Society/Universal human order", "Nature/Interaction with rest of the nature"],
-    correct: 2
-  },
-  {
-    id: 204,
-    question: "Kindness (Daya) is the value at the level of ...............",
-    options: ["Individual/self", "Family/Human-human relationship", "Society/Universal human order", "Nature/Interaction with rest of the nature"],
-    correct: 2
-  },
-  {
-    id: 205,
-    question: "If a person neither has the ability nor has the means to fulfill his/her needs, the participation in relation to making available the body is ................",
-    options: ["Compassion", "Kindness", "Benevolence", "Generosity"],
-    correct: 0
-  },
-  {
-    id: 206,
-    question: "................ is the sum of the state of harmony within, expressing itself and participating in harmony with the outside world.",
-    options: ["Preconditioning", "Definite human conduct", "Indefinite conduct", "Inhuman behaviour"],
-    correct: 1
-  },
-  {
-    id: 207,
-    question: "Methods to remove unethical practices",
-    options: ["Audit inspections", "Carrying out sting operations", "Promoting awareness", "All of these"],
-    correct: 3
-  },
-  {
-    id: 208,
-    question: "Which of the following should not be the key question to be answered while planning a production system?",
-    options: ["What to produce?", "How and how much to produce?", "For whom to produce?", "How to make/earn huge profit?"],
-    correct: 3
-  },
-  {
-    id: 209,
-    question: "A good policy initiative reflects................",
-    options: ["Conducive to human welfare", "Conducive to protection, enrichment and right utilization of resources", "Both", "None of these"],
-    correct: 2
-  },
-  {
-    id: 210,
-    question: "Perseverance means..........",
-    options: ["Commitment for living in harmony at all 4 levels with patience", "Commitment in helping others to understand harmony and live in harmony at all the 4 levels", "Commitment to invest one's self, body and physical facilities for understanding and living in harmony at all the 4 levels.", "All of these"],
-    correct: 0
-  },
-  {
-    id: 211,
-    question: "Bravity means ............",
-    options: ["Commitment for living in harmony at all 4 levels with patience", "Commitment in helping others to understand harmony and live in harmony at all the 4 levels", "Commitment to invest one's self, body and physical facilities for understanding and living in harmony at all the 4 levels.", "All of these"],
-    correct: 1
-  },
-  {
-    id: 212,
-    question: "Generosity means................",
-    options: ["Commitment for living in harmony at all 4 levels with patience", "Commitment in helping others to understand harmony and live in harmony at all the 4 levels", "Commitment to invest one's self, body and physical facilities for understanding and living in harmony at all the 4 levels.", "All of these"],
-    correct: 2
-  },
-  {
-    id: 213,
-    question: "Self restraint is the expressed value of ...............",
-    options: ["Guidance", "Gratitude", "Trust", "Love"],
-    correct: 1
-  },
-  {
-    id: 214,
-    question: "There is .............in the 4 orders of the nature",
-    options: ["Mutual fulfilment", "Opposition", "Tendency to balance", "Struggle"],
-    correct: 0
-  },
-  {
-    id: 215,
-    question: "Awakening to the activity of .............. leads to clarity of co-existence and submergence.",
-    options: ["Contemplation", "Understanding", "Realization", "Comparing"],
-    correct: 2
-  },
-  {
-    id: 216,
-    question: "Awakening to the activity of ............... leads to clarity of Harmony in nature, Self organization (Innateness)",
-    options: ["Contemplation", "Understanding", "Realization", "Comparing"],
-    correct: 1
-  },
-  {
-    id: 217,
-    question: "Awakening to the activity of ............... leads to clarity of Relationship, Natural characteristic or participation in larger order.",
-    options: ["Contemplation", "Understanding", "Realization", "Comparing"],
-    correct: 0
-  },
-  {
-    id: 218,
-    question: "Which among the following indicates the participation in larger order?",
-    options: ["Natural characteristic", "Innateness", "Co-existence", "Form"],
-    correct: 0
-  },
-  {
-    id: 219,
-    question: "Which one of the following indicates self organization?",
-    options: ["Natural characteristic", "Innateness", "Co-existence", "Form"],
-    correct: 1
-  },
-  {
-    id: 220,
-    question: "Which one of the following indicates submergence?",
-    options: ["Natural characteristic", "Innateness", "Co-existence", "Form"],
-    correct: 2
-  },
-  {
-    id: 221,
-    question: "Which aspect/dimension of a unit indicates its size, colour, density, etc.?",
-    options: ["Natural characteristic", "Innateness", "Co-existence", "Form"],
-    correct: 3
-  },
-  {
-    id: 222,
-    question: "Which aspect/dimension of a unit indicates the impact of one unit on the other unit?",
-    options: ["Property", "Natural characteristic", "Form", "Co-existence"],
-    correct: 0
-  },
-  {
-    id: 223,
-    question: "What aspect/dimension of a Plant change with the time and space?",
-    options: ["Co-existence and innateness", "Natural characteristic and innateness", "Form and property", "Property and co-existence"],
-    correct: 2
-  },
-  {
-    id: 224,
-    question: "What is the innateness of a Plant?",
-    options: ["Existence + Growth", "Cruelty/Non-cruelty", "Nurture/Worsen", "Will to live in Self"],
-    correct: 0
-  },
-  {
-    id: 225,
-    question: "Which statement indicates the submergence of a Plant in this existence?",
-    options: ["Every cell of the Plant is energized in co-existence with space", "Every cell of the Plant is self-organized in co-existence with space", "Every cell of the Plant is recognizes and fulfills its relationship with other units", "All of these"],
-    correct: 3
-  },
-  {
-    id: 226,
-    question: "Contemplation leads to a feeling of .................",
-    options: ["Bliss", "Happiness", "Satisfaction", "Peace"],
-    correct: 2
-  },
-  {
-    id: 227,
-    question: "Understanding leads to a feeling of ...........",
-    options: ["Bliss", "Happiness", "Satisfaction", "Peace"],
-    correct: 0
-  },
-  {
-    id: 228,
-    question: "Unguided self leads to ...........",
-    options: ["Obsession for sensation", "Obsession for indulgence", "Obsession for Profit", "All of these"],
-    correct: 3
-  },
-  {
-    id: 229,
-    question: "Existential Law consists of .............",
-    options: ["Physical Law", "Behavioural Law", "Societal Law", "All of these"],
-    correct: 3
-  },
-  {
-    id: 230,
-    question: "The base of unconditional relationship is ...........",
-    options: ["Right feeling", "Thought", "Expectation", "None of these"],
-    correct: 0
-  },
-  {
-    id: 231,
-    question: "Right sequence in which Human Tradition can be materialized",
-    options: ["Human Education, Human Conduct, Human Constitution, Human Order", "Human Constitution, Human Order, Human Education, Human Conduct", "Human Conduct, Human Order, Human Education, Human Constitution", "Human Order, Human Education, Human Constitution, Human Conduct"],
-    correct: 0
-  },
-  {
-    id: 232,
-    question: "'Co-existence' is ever present, ever effective, ever ...............",
-    options: ["Expensive", "Expressive", "Extended", "Exhausted"],
-    correct: 1
-  },
-  {
-    id: 233,
-    question: "To attain the universal order, which of the following is most effective?",
-    options: ["Human Order", "Material Order", "Pranic Order", "Animal Order"],
-    correct: 0
-  },
-  {
-    id: 234,
-    question: "Complete alignment of our view/vision with reality is............",
-    options: ["Education", "Qualification", "Knowledge", "Happiness"],
-    correct: 2
-  },
-  {
-    id: 235,
-    question: "Right Mindfulness means..................",
-    options: ["Mind is full of multiple thoughts", "Continuous awareness", "Remembering things in sequence", "Possessing a great memory power"],
-    correct: 1
-  },
-  {
-    id: 236,
-    question: "Justice takes care of our ......................",
-    options: ["Physical and mental well-being", "Relationship in human interaction", "Both", "None of these"],
-    correct: 1
-  },
-  {
-    id: 237,
-    question: "Education and health take care of our ..........................",
-    options: ["Physical and mental well-being", "Relationship in human interaction", "Both", "None of these"],
-    correct: 0
   }
 ];
 
         this.currentQuestions = [];
         this.currentQuestionIndex = 0;
         this.answers = {};
-        this.timeRemaining = 60 * 60; 
+        this.timeRemaining = 15 * 60; 
         this.timer = null;
         this.startTime = null;
         this.studentName = '';
 
-        // Initialize after DOM is ready
         this.initializeEventListeners();
     }
 
     initializeEventListeners() {
-        // Wait for DOM elements to be available
         const startBtn = document.getElementById('startQuizBtn');
         const adminBtn = document.getElementById('adminLoginBtn');
         
@@ -1487,7 +749,6 @@ class UHVQuizApp {
         if (logoutBtn) logoutBtn.addEventListener('click', () => this.adminLogout());
         if (exportBtn) exportBtn.addEventListener('click', () => this.exportCSV());
 
-        // Handle name input
         const nameInput = document.getElementById('studentName');
         if (nameInput) {
             nameInput.addEventListener('keypress', (e) => {
@@ -1496,7 +757,6 @@ class UHVQuizApp {
                 }
             });
             
-            // Ensure input focus works properly
             nameInput.addEventListener('click', () => {
                 nameInput.focus();
             });
@@ -1525,7 +785,7 @@ class UHVQuizApp {
 
     prepareRandomQuestions() {
         const shuffledQuestions = this.shuffleArray(this.questions);
-        const selectedQuestions = shuffledQuestions.slice(0, 100);
+        const selectedQuestions = shuffledQuestions.slice(0, 20);
         
         this.currentQuestions = selectedQuestions.map(q => this.shuffleQuestionOptions(q));
         
@@ -1545,7 +805,7 @@ class UHVQuizApp {
         this.prepareRandomQuestions();
         this.currentQuestionIndex = 0;
         this.answers = {};
-        this.timeRemaining = 60 * 60;
+        this.timeRemaining = 15 * 60;
         this.startTime = Date.now();
 
         this.showScreen('quizScreen');
@@ -1591,7 +851,7 @@ class UHVQuizApp {
         // Update question counter
         const counterElement = document.getElementById('questionCounter');
         if (counterElement) {
-            counterElement.textContent = `Question ${questionNumber} of 100`;
+            counterElement.textContent = `Question ${questionNumber} of 20`;
         }
 
         // Update question text
@@ -1644,7 +904,7 @@ class UHVQuizApp {
 
         const progressBar = document.getElementById('progressBar');
         if (progressBar) {
-            const progress = (questionNumber / 100) * 100;
+            const progress = (questionNumber / 20) * 100;
             progressBar.style.width = `${progress}%`;
         }
 
@@ -1655,11 +915,11 @@ class UHVQuizApp {
         if (prevBtn) prevBtn.disabled = questionNumber === 1;
         
         if (nextBtn) {
-            nextBtn.style.display = questionNumber === 100 ? 'none' : 'block';
+            nextBtn.style.display = questionNumber === 20 ? 'none' : 'block';
         }
         
         if (submitBtn) {
-            submitBtn.style.display = questionNumber === 100 ? 'block' : 'none';
+            submitBtn.style.display = questionNumber === 20 ? 'block' : 'none';
         }
     }
 
@@ -1701,7 +961,7 @@ class UHVQuizApp {
             }
         });
 
-        const scorePercentage = Math.round((correct / 100) * 100);
+        const scorePercentage = Math.round((correct / 20) * 100);
 
         this.saveResult({
             name: this.studentName,
@@ -1834,9 +1094,9 @@ class UHVQuizApp {
 
     saveResult(result) {
         try {
-            let results = JSON.parse(localStorage.getItem('uhvQuizResults') || '[]');
+            let results = JSON.parse(localStorage.getItem('MathsQuizResults') || '[]');
             results.push(result);
-            localStorage.setItem('uhvQuizResults', JSON.stringify(results));
+            localStorage.setItem('MathsQuizResults', JSON.stringify(results));
         } catch (error) {
             console.error('Error saving result:', error);
         }
@@ -1881,7 +1141,7 @@ class UHVQuizApp {
 
     showAdminDashboard() {
         try {
-            const results = JSON.parse(localStorage.getItem('uhvQuizResults') || '[]');
+            const results = JSON.parse(localStorage.getItem('MathsQuizResults') || '[]');
             
             const elements = {
                 totalStudents: document.getElementById('totalStudents'),
@@ -1903,7 +1163,7 @@ class UHVQuizApp {
             
             if (elements.completionRate) {
                 const completionRate = results.length > 0 
-                    ? Math.round((results.filter(r => r.correct + r.wrong + r.unanswered === 100).length / results.length) * 100)
+                    ? Math.round((results.filter(r => r.correct + r.wrong + r.unanswered === 20).length / results.length) * 100)
                     : 0;
                 elements.completionRate.textContent = `${completionRate}%`;
             }
@@ -1935,7 +1195,7 @@ class UHVQuizApp {
 
     exportCSV() {
         try {
-            const results = JSON.parse(localStorage.getItem('uhvQuizResults') || '[]');
+            const results = JSON.parse(localStorage.getItem('MathsQuizResults') || '[]');
             
             if (results.length === 0) {
                 alert('No data to export.');
@@ -1960,7 +1220,7 @@ class UHVQuizApp {
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `uhv_quiz_results_${new Date().toISOString().split('T')[0]}.csv`;
+            a.download = `Maths_quiz_results_${new Date().toISOString().split('T')[0]}.csv`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -1984,5 +1244,5 @@ class UHVQuizApp {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new UHVQuizApp();
+    new MATHSQuizApp();
 });
