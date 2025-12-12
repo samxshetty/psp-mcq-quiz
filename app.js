@@ -1,1466 +1,908 @@
-class PHYQuizApp {
+class BEQuizApp {
     constructor() {
         this.questions = [
  {
     id: 1,
-    question: "An experimental evidence for matter waves is",
-    options: ["photoelectric effect", "Compton effect", "electron diffraction", "interference of light"],
-    correct: 2
+    question: "The voltage at which forward current through the diode starts increasing rapidly is called as",
+    options: ["Cut in voltage", "Breakdown voltage", "Saturation voltage", "Cut off voltage"],
+    correct: 0
   },
   {
     id: 2,
-    question: "A wave packet is used to represent",
-    options: ["A light wave", "A stationary wave", "Matter wave", "A transverse wave"],
+    question: "Smaller the ripple factor, the output will have higher components of",
+    options: ["Spike", "AC", "DC", "pulse"],
     correct: 2
   },
   {
     id: 3,
-    question: "Wave function associated with matter waves is a quantum mechanical equivalent of",
-    options: ["wavelength of the wave", "frequency of the wave", "amplitude of the wave", "phase of the wave"],
-    correct: 2
+    question: "The efficiency of full wave rectifier is about",
+    options: ["0.46", "81.2", "1.21", "40.6"],
+    correct: 1
   },
   {
     id: 4,
-    question: "The concept of matter wave was suggested by_________",
-    options: ["Heisenberg", "de Broglie", "Schrodinger", "Laplace"],
+    question: "When the p-n junction diode is forward biased, it offers",
+    options: ["High resistance", "Low resistance", "Low voltage", "High voltage"],
     correct: 1
   },
   {
     id: 5,
-    question: "The function representing matter waves must be ________",
-    options: ["complex", "real", "zero", "infinity"],
-    correct: 0
+    question: "Zener diode is mainly used as",
+    options: ["Amplifier", "Comparator", "Oscillator", "Voltage regulator"],
+    correct: 3
   },
   {
     id: 6,
-    question: "A particle with rest mass m₀ is moving with speed c. The de-broglie wavelength associated with it is",
-    options: ["zero", "infinity", "hγ/c²", "m₀c"],
-    correct: 0
-  },
-  {
-    id: 7,
-    question: "The matter waves are",
-    options: ["light waves", "sound waves", "probablistic waves", "e.m.waves"],
+    question: "The efficiency of half wave rectifier is about",
+    options: ["81.2%", "46 %", "40.6 %", "1.21%"],
     correct: 2
   },
   {
+    id: 7,
+    question: "The r.m.s value of load current in a full wave rectifier is",
+    options: ["0.707 Im", "0.5π", "0.5 Im", "0.3183 Im"],
+    correct: 0
+  },
+  {
     id: 8,
-    question: "The wavelength of matter waves does not depend on",
-    options: ["charge", "mass", "velocity", "momentum"],
+    question: "The amount of ripples present at the output of half wave rectifier is",
+    options: ["1.21", "0.81", "0.46", "0.50"],
     correct: 0
   },
   {
     id: 9,
-    question: "de Broglie wavelength of a body of mass m and kinetic energy E is given by:",
-    options: ["λ = / h", "λ = h / meV", "λ = h / √(2mE)", "λ = h/2meV"],
-    correct: 2
-  },
-  {
-    id: 10,
-    question: "If the energy of a particle is reduced to one-fourth then the percentage increase in the de-Broglie wavelength is",
-    options: ["41%", "100%", "144%", "70%"],
+    question: "The amount of ripples present at the output of a full wave rectifier is",
+    options: ["81%", "48%", "42%", "52%"],
     correct: 1
   },
   {
+    id: 10,
+    question: "A silicon diode is connected in series to a dc supply of 2 volts and resistance of 13 Ω, the current in the circuit is",
+    options: ["1.5A", "0.55 A", "0.45 A", "0.10A"],
+    correct: 3
+  },
+  {
     id: 11,
-    question: "The kinetic energy of electron and proton is the same. The relation between their de-broglie wavelengths λₑ and λₚ is",
-    options: ["λₑ = λₚ", "λₑ < λₚ", "λₑ > λₚ", "λₑ = 2λₚ"],
+    question: "The DC load current of a half wave rectifier is",
+    options: ["2Idc/π", "2Im/π", "Im/π", "1.414/π"],
     correct: 2
   },
   {
     id: 12,
-    question: "The wave nature associated with electrons in motion was verified by",
-    options: ["Photoelectric effect", "Compton effect", "Diffraction by crystals", "incidence of electrons on metallic surface"],
-    correct: 2
+    question: "A sinusoidal voltage of peak value 40V is applied to a half wave rectifier with RL = 800 Ω and Rf = 8 Ω. The peak value of the current is",
+    options: ["4.95 mA", "49.5 mA", "0.495 mA", "4.95 A"],
+    correct: 1
   },
   {
     id: 13,
-    question: "…………… of a wave is the velocity with which variations in the shape of modulation or envelop of the wave propagate through space.",
-    options: ["The elliptical velocity", "The phase velocity", "The group velocity", "The circular velocity"],
-    correct: 2
+    question: "A silicon diode is connected in series to a dc supply of 5 Volts and resistance of 1.5 kΩ, the current in the circuit is",
+    options: ["3.86 mA", "2.86 mA", "0.38 mA", "1.5mA"],
+    correct: 1
   },
   {
     id: 14,
-    question: "The phase and group velocities does not depend on which of the following?",
-    options: ["Frequency", "Wavelength", "Phase constant", "Attenuation constant"],
+    question: "Average DC load voltage of a full wave Bridge rectifier is",
+    options: ["Im/0.5", "2Im/π", "Im/0.707", "2Vm/π"],
     correct: 3
   },
   {
     id: 15,
-    question: "de Broglie wavelength can be assigned to",
-    options: ["only electrons", "any stationary body", "any moving body", "only subatomic particles"],
+    question: "In the voltage regulator shown below, if the current through the load decreases",
+    options: ["The current through R1 will increase.", "The current through R1 will decrease.", "Zener diode current will increase.", "Zener diode current will decrease"],
     correct: 2
   },
   {
     id: 16,
-    question: "Which one of the following objects, moving at the same speed, has the greatest de Broglie wavelength?",
-    options: ["Neutron", "Electron", "Tennis ball", "Foot ball"],
-    correct: 1
+    question: "In the circuit, what is the output voltage?",
+    options: ["50 V", "70 V", "120 V", "170 V"],
+    correct: 0
   },
   {
     id: 17,
-    question: "The group velocity of matter waves associated with a moving particle is:",
-    options: ["The same as phase velocity", "Less than the particle velocity", "Equal to the particle velocity", "More than the particle velocity"],
-    correct: 2
+    question: "The r.m.s value of load current in a half wave rectifier is",
+    options: ["0.5 Im", "0.5π", "0.707 Im", "0.3183 Im"],
+    correct: 0
   },
   {
     id: 18,
-    question: "Uncertainty principle is applicable to",
-    options: ["Macroscopic particles", "Microscopic particles", "gases", "None"],
-    correct: 1
+    question: "A germanium diode is connected in series to a dc supply of 4volts and resistance of 2 kΩ, the current in the circuit is",
+    options: ["1.85 mA", "1.45mA", "0.185 mA", "18.5 mA"],
+    correct: 0
   },
   {
     id: 19,
-    question: "According to Heisenberg uncertainty principle,",
-    options: ["E = mc²", "Δx x Δp >= h/4π", "λ = h / p", "Δx x Δp = h/6π"],
+    question: "A zener diode of 10V is connected to a supply of 20V through a series resistance of 200 ohms. With no load, current through the zener is",
+    options: ["500 mA", "50 mA", "5 A", "400 mA"],
     correct: 1
   },
   {
     id: 20,
-    question: "If uncertainty in the position of an electron is zero, the uncertainty in its momentum would be",
-    options: ["zero", "< h/ 2λ", "> h/ 2λ", "Infinite"],
-    correct: 3
+    question: "A germanium diode is connected in series to a dc supply of 7.5 volts and resistance of 1.3 kΩ, the current in the circuit is",
+    options: ["5.53 mA", "5.53 A", "5.35 mA", "1.53 mA"],
+    correct: 0
   },
   {
     id: 21,
-    question: "How is the state of a quantum mechanical system completely specified?",
-    options: ["By its position in space", "By its time", "By its wavefunction", "By its angular momentum"],
-    correct: 2
-  },
-  {
-    id: 22,
-    question: "The wave function is an acceptable wave function if it is",
-    options: ["finite everywhere", "continous everywhere", "single valued everywhere", "having all these properties"],
+    question: "A silicon and a germanium diodes are connected in series to a dc supply of 8 volts and resistance of 2.5 kΩ, the current in the circuit is",
+    options: ["2.8 A", "28 mA", "0.28 mA", "2.8 mA"],
     correct: 3
   },
   {
+    id: 22,
+    question: "In the breakdown region, zener diode behaves like a source of",
+    options: ["Constant resistance", "Constant current", "Constant voltage", "Constant power"],
+    correct: 2
+  },
+  {
     id: 23,
-    question: "Schrodinger's time independent equation is applicable for the particles with",
-    options: ["constant energy", "variable energy", "only constant potential energy", "all of these"],
+    question: "Ripple factor for a full wave bridge rectifier with capacitor filter is",
+    options: ["1/(4√3fCRL)", "1/(2√3fCRL)", "1/(2fCRL)", "1/(4fCRL)"],
     correct: 0
   },
   {
     id: 24,
-    question: "The Steady-state form of Schrodinger wave equation is _____________",
-    options: ["Linear", "Quadratic", "Cubic", "Nonlinear"],
-    correct: 0
+    question: "Which of the following statement is correct?",
+    options: ["Rectification efficiency of a half wave rectifier is equal to that of the Full wave rectifier", "All of the given options", "Rectification efficiency of a half wave rectifier is lower than that of the Full wave rectifier", "Rectification efficiency of a half wave rectifier is higher than that of the Full wave rectifier"],
+    correct: 2
   },
   {
     id: 25,
-    question: "The values of Energy for which Schrodinger's steady state equation can be solved is called as",
-    options: ["Eigen Vectors", "Eigen Values", "Eigen Functions", "Operators"],
-    correct: 1
+    question: "In a Full wave bridge rectifier, the number of diodes conducting at a time during one half cycle of the input signal is",
+    options: ["2", "4", "3", "1"],
+    correct: 0
   },
   {
     id: 26,
-    question: "The Schrodinger wave equation is a",
-    options: ["Linear differential equation", "Non-linear differential equation", "Second-order equation", "First-order equation"],
-    correct: 0
+    question: "The doping level in a zener diode is ............... that of a PN diode.",
+    options: ["The same as", "Less than", "More than", "None of the given options"],
+    correct: 2
   },
   {
     id: 27,
-    question: "For a quantum wave particle, E = _____________",
-    options: ["ℏ k", "ℏ ω", "ℏ ω/2", "ℏ k/2"],
-    correct: 1
+    question: "The basic purpose of filter is to",
+    options: ["Minimize variations in ac input signal", "Suppress harmonics in rectified output", "Remove ripples from the rectified output", "Stabilize dc output voltage"],
+    correct: 2
   },
   {
     id: 28,
-    question: "Which of the following can be a wave function?",
-    options: ["tan x", "sin x", "cot x", "sec x"],
-    correct: 1
+    question: "The basic reason why a full wave rectifier has a twice the efficiency of a half wave rectifier is that",
+    options: ["It makes use of transformer", "Its ripple factor is much less", "It utilizes both half-cycle of the input", "Its output frequency is double the line frequency"],
+    correct: 2
   },
   {
     id: 29,
-    question: "Which of the following is not a characteristic of wave function?",
-    options: ["Continuous", "Single valued", "Normalizable", "Multi valued"],
-    correct: 3
+    question: "In a full wave rectifier, if the input frequency is 50 Hz, then output frequency will be",
+    options: ["50 Hz", "75 Hz", "100 Hz", "200 Hz"],
+    correct: 2
   },
   {
     id: 30,
-    question: "The total probability of finding the particle in space must be __________",
-    options: ["zero", "unity", "infinity", "double"],
-    correct: 1
+    question: "To get a peak load voltage of 40V out of a bridge rectifier. What is the approximate rms value of secondary voltage?",
+    options: ["0 V", "14.4 V", "28.3 V", "56.6 V"],
+    correct: 2
   },
+
+  // UNIT 2 - BJT and MOSFET
   {
     id: 31,
-    question: "The normalized wave function must have ________ norm",
-    options: ["Unit", "zero", "finite", "infinite"],
-    correct: 0
+    question: "Total emitter current in BJT is",
+    options: ["IC + ICBO", "IC+ IE", "IB + IC", "IB - IC"],
+    correct: 2
   },
   {
     id: 32,
-    question: "The square of the magnitude of the wave function is called_________",
-    options: ["current density", "probability density", "Normalization", "volume density"],
-    correct: 1
+    question: "Which is not a MOSFET terminal?",
+    options: ["Gate", "Source", "Drain", "Base"],
+    correct: 3
   },
   {
     id: 33,
-    question: "According to the wave function and it first partial derivative should be _______ functions for all values of X",
-    options: ["Zero", "Continous", "Infinity", "Discontinous"],
+    question: "What is the collector current for a C-E configuration with a beta of 100 and a base current of 30 μA?",
+    options: ["3μA", "3 mA", "30 μA", "30 mA"],
     correct: 1
   },
   {
     id: 34,
-    question: "For E > 0, the particle has a ______ kinetic energy",
-    options: ["Zero", "Positive", "Negative", "Infinity"],
-    correct: 1
+    question: "In a CE amplifier circuit, the output signal generated with a phase shift of",
+    options: ["180°", "90°", "0°", "270°"],
+    correct: 0
   },
   {
     id: 35,
-    question: "According to Max Born's interpretation, |ψ|² represents",
-    options: ["energy density", "particle density", "probability density", "charge density"],
+    question: "For a BJT, the following statement is true",
+    options: ["IB ≅ IE", "IB ≅ IC", "IE ≅ IC", "IB ≅ αIE"],
     correct: 2
   },
   {
     id: 36,
-    question: "In a one-dimensional infinite potential well, energy of the particle En =",
-    options: ["n²h²/8mL²", "n²ħ²/8mL²", "n²h²/2mL²", "n²h²/4mL²"],
+    question: "Which transistor element is used in CMOS logic.",
+    options: ["MOSFET", "JFET", "BJT", "Diode"],
     correct: 0
   },
   {
     id: 37,
-    question: "The energy corresponding to the lowest permitted energy level for a particle in an infinite potential well is called",
-    options: ["Excited energy", "Zero-point energy", "Metastable state energy", "None of these"],
-    correct: 1
-  },
-  {
-    id: 38,
-    question: "For a particle in the ground state in an one-dimensional potential well of width L and of infinite height, the probability of finding it will be maximum at a distance of",
-    options: ["L/2 from the wall", "L/4 from the wall", "3L/4 from the wall", "L=0 from the wall"],
+    question: "A transistor has a beta of 200 and a base current of 40 μA in CE configuration. Then the collector current is",
+    options: ["8 mA", "8μA", "80 μA", "80 mA"],
     correct: 0
   },
   {
+    id: 38,
+    question: "BJT is made to work as an amplifier when it is operated in ....... region",
+    options: ["Inverted mode", "Saturation", "Cut off", "Active"],
+    correct: 3
+  },
+  {
     id: 39,
-    question: "According to the particle in a box, the wave function of the particle lies in which region?",
-    options: ["x > 0", "x < 0", "0 < x < L", "x > L"],
-    correct: 2
+    question: "A transistor has IB = 0.08 mA and IE = 9.60 mA. The value of β is",
+    options: ["129", "119", "960", "100"],
+    correct: 1
   },
   {
     id: 40,
-    question: "The Energy of the particle is proportional to __________",
-    options: ["n", "n⁻¹", "n²", "n⁻²"],
+    question: "The enhancement type MOSFET works only with ________.",
+    options: ["large negative gate voltage", "large positive source voltage", "large positive gate voltage", "large negative drain voltage"],
     correct: 2
   },
   {
     id: 41,
-    question: "The wave function shown in the figure for which quantum state corresponding to",
-    options: ["Ground state", "First excited state", "Second excited state", "Third excited state"],
-    correct: 1
+    question: "A transistor has IB = 0.06 mA and IE = 9.00 mA. The value of β is",
+    options: ["149", "129", "960", "100"],
+    correct: 0
   },
   {
     id: 42,
-    question: "The de Broglie wavelength associated with a particle of mass 6.62 x 10⁻²⁹ kg travelling with a velocity 10⁵ ms⁻¹ is equal to",
-    options: ["10 nm", "1 nm", "0.1 nm", "0.01nm"],
-    correct: 2
+    question: "In CE configuration of BJT, output characteristics is plotted by taking",
+    options: ["VCE verses IC for constant IE", "VCE verses IC for constant IB", "VCE verses IC for constant VCB", "VCE verse IE for constant IC"],
+    correct: 1
   },
   {
     id: 43,
-    question: "What is the energy of electron in terms of its ground state energy (E₁) when it jumps from n = 1 to n = 4 is",
-    options: ["E₁/9", "E₁/16", "16 E₁", "4 E₁"],
-    correct: 2
+    question: "A transistor has IB = 0.06 mA and IE = 9.00 mA. The value of α is",
+    options: ["9.9", "0.99", "990", "100"],
+    correct: 1
   },
   {
     id: 44,
-    question: "An electron is trapped in a one dimensional potential well of width 1 Å. How much energy must be supplied to excite the electron from the ground state to second excited state?",
-    options: ["4.82 x 10⁻¹⁷ J", "4.82 x 10⁻¹⁸ J", "1.81 x 10⁻¹⁷ J", "1.81 x 10⁻¹⁸ J"],
+    question: "The MOSFET stands for",
+    options: ["Metal oxide semiconductor FET", "Metal oxide surface FET", "Metal oxidized selenium FET", "Metal of surface FET"],
     correct: 0
   },
   {
     id: 45,
-    question: "Calculate the deBroglie wavelength associated with an electron with a kinetic energy of 2000 eV is",
-    options: ["2.74 Å", "0.274 Å", "27.4 Å", "0.0274 Å"],
-    correct: 1
+    question: "When the transistor operates as an amplifier, it is operating at",
+    options: ["In the active region", "In the cut-off region", "In the Ohmic region", "In the Saturation region"],
+    correct: 0
   },
   {
     id: 46,
-    question: "The product of phase velocity and group velocity is equal to",
-    options: ["particle velocity", "velocity of light", "square of velocity of light", "square root of velocity of light"],
-    correct: 2
+    question: "When BJT operates as a switch, it is operated in ____________",
+    options: ["Cut-off and Saturation region", "Active and saturation region", "Active and cut-off region", "Saturation and active region"],
+    correct: 0
   },
   {
     id: 47,
-    question: "Calculate the Zero-point energy for a particle in an infinite potential well for an electron confined to a 1 nm atom.",
-    options: ["3.9 x10⁻²⁹ J", "4.9 X 10⁻²⁹ J", "5.9 X 10⁻²⁹ J", "6.9 X 10⁻²⁹ J"],
-    correct: 2
+    question: "The collector to base current gain β in terms of α is defined as",
+    options: ["α/(1 - α)", "α/(1 + α)", "β/(1 + α)", "β/(1 + β)"],
+    correct: 0
   },
   {
     id: 48,
-    question: "The de Broglie wavelength associated with an electron moving with a speed of 10⁵ m/s",
-    options: ["0.727 Å", "7.27 Å", "72.7 Å", "727 Å"],
-    correct: 2
+    question: "The collector to emitter current gain α in terms of β is defined as",
+    options: ["β/(1 + β)", "α/(1 - α)", "β/(1 + α)", "α/(1 + α)"],
+    correct: 0
   },
   {
     id: 49,
-    question: "The ratio of energy of a photon with that of a neutron when both are associated with wavelength of 1 Å., given that the mass of neutron is 1.678 x 10⁻²⁷ Kg.",
-    options: ["2.5 x10⁵", "1.5 X 10⁵", "0.5 X 10⁵", "3.5 X 10⁵"],
-    correct: 1
+    question: "The leakage current in a transistor is due to:",
+    options: ["Zener effect", "Majority charge carriers", "Minority charge carriers", "Breakdown"],
+    correct: 2
   },
   {
     id: 50,
-    question: "An electron is confirmed to move between two rigid walls separated by 20 Å. The de Broglie wavelength representing the ground state energy of an electron is (assume the potential to be zero)",
-    options: ["0.6 Å", "0.2 Å", "0.4 Å", "0.8 Å"],
-    correct: 2
+    question: "A bipolar junction transistor is a",
+    options: ["Current controlled device", "Voltage controlled device", "Resistance controlled device", "Junction controlled device"],
+    correct: 1
   },
-
-  // Unit II: Quantum Computing
   {
     id: 51,
-    question: "In quantum computing, what is the basic unit of information?",
-    options: ["Giga", "Qubit", "Bit", "Byte"],
+    question: "The value of α of a transistor is ..........",
+    options: ["more than 1", "Less than 1", "0.76 to 0.96", "1"],
     correct: 1
   },
   {
     id: 52,
-    question: "What do we call the pieces of information in a quantum computer?",
-    options: ["Bits", "Qubits", "Bytes", "Qubytes"],
-    correct: 1
+    question: "The value of β for a transistor is generally ....................",
+    options: ["1", "Less than 1", "Between 20 and 500", "Above 500"],
+    correct: 2
   },
   {
     id: 53,
-    question: "When the information is between 0 and 1 in a quantum computer, what do we call this?",
-    options: ["Superposition", "Same position", "Ordinary position", "Different position"],
+    question: "The value of β for a silicon transistor given the collector current as 1 mA and base current as 10 µA is",
+    options: ["100", "10", "0.1", "1000"],
     correct: 0
   },
   {
     id: 54,
-    question: "Quantum computers are very good at dealing with_____",
-    options: ["Clarity", "Certainty", "Uncertainty", "Reliability"],
-    correct: 2
-  },
-  {
-    id: 55,
-    question: "What does 'entanglement' mean?",
-    options: ["Two particles are different", "Two particles are separate", "Two particles are independent", "Two particles are connected"],
+    question: "If an emitter current is changed by 4mA, the collector current changes by 3.5mA. The value of β will be:",
+    options: ["8", "0.5", "3.5", "7"],
     correct: 3
   },
   {
+    id: 55,
+    question: "A MOSFET is a",
+    options: ["Current controlled device", "Voltage controlled device", "Resistance controlled device", "Junction controlled device"],
+    correct: 1
+  },
+  {
     id: 56,
-    question: "What can quantum computers be used for?",
-    options: ["Artificial Intelligence", "Simulations/Predictions", "Both (A) and (B)", "Google Docs and Slides"],
+    question: "A MOSFET has................................... terminals.",
+    options: ["Two", "Five", "Three", "Four"],
     correct: 2
   },
   {
     id: 57,
-    question: "When the two members of a Qubit pair exist in a single quantum state, it is known as ____________.",
-    options: ["Entanglement", "Engagement", "Superposition", "None of the Above"],
+    question: "If the value of α is 0.9, then value of β is ...........",
+    options: ["9", "0.9", "900", "90"],
     correct: 0
   },
   {
     id: 58,
-    question: "Quantum computing is relatively _________ than classical computing.",
-    options: ["Faster", "Slower", "Average", "None of the Above"],
+    question: "The value of β for a silicon transistor given the collector current as 1 mA and base current as 25 µA is",
+    options: ["40", "4", "400", "4000"],
     correct: 0
   },
   {
     id: 59,
-    question: "Qubit stands for ________",
-    options: ["Quality bits", "Question bit", "Quantum gates", "Quantum bit"],
-    correct: 3
+    question: "The value of α for a silicon transistor, given the collector current as 1 mA and base current as 25 µA is",
+    options: ["0.9176", "0.9756", "0.9276", "0.9376"],
+    correct: 1
   },
   {
     id: 60,
-    question: "A qubit is a _______quantum-mechanical system.",
-    options: ["One-state", "Two-state", "Three-state", "Four-state"],
+    question: "In CE-RC coupled amplifier, an emitter bypass capacitor is connected in parallel with emitter resistance RE to",
+    options: ["Increase the noise in the circuit", "To provide a low reactance path to the amplified ac signal", "To support the resistance RE", "To block the dc voltage"],
     correct: 1
   },
   {
     id: 61,
-    question: "The set of vectors and set of scalars which follow the same properties followed by linear vector space is said be",
-    options: ["Basis", "Dimension", "Hilbert space", "Orthogonal state"],
-    correct: 2
+    question: "The number of depletion layers in a transistor is ............",
+    options: ["Four", "Three", "One", "Two"],
+    correct: 3
   },
   {
     id: 62,
-    question: "The process of replacing iᵗʰ row of the matrix by iᵗʰ column, is said to be",
-    options: ["Conjugate Matrix", "Transpose Matrix", "Identity Matrix", "Hermitian Operator"],
+    question: "In a transistor, signal is transferred from a ............... region",
+    options: ["high resistance to low resistance", "low resistance to high resistance", "high resistance to high resistance", "low resistance to low resistance"],
     correct: 1
   },
   {
     id: 63,
-    question: "The operators change with time while the state vectors remain constant, then it is said to be",
-    options: ["Schrodinger representation", "Heisenberg representation", "Interaction representation", "None of the above"],
+    question: "With the E-MOSFET, when gate input voltage is zero, drain current is .....",
+    options: ["At saturation", "Zero", "IDSS", "Widening the channel"],
     correct: 1
   },
   {
     id: 64,
-    question: "The operators remain constant while the state vectors change with time, then it is said to be",
-    options: ["Schrodinger representation", "Heisenberg representation", "Interaction representation", "None of the above"],
-    correct: 0
+    question: "MOSFET has a thin layer of silicon dioxide, which act as:",
+    options: ["Resistance", "Inductor", "Semiconductor", "Capacitor"],
+    correct: 3
   },
   {
     id: 65,
-    question: "The diagonal entries of a Hermitian matrix must be",
-    options: ["Complex conjugate", "Real", "Both real & Complex conjugate", "None of the above"],
-    correct: 1
+    question: "The base of a transistor is .............. doped",
+    options: ["Heavily", "Moderately", "Lightly", "Not"],
+    correct: 2
   },
   {
     id: 66,
-    question: "The eigen value of a Hermitian matrix must be",
-    options: ["Complex conjugate", "Real", "Both real & Complex conjugate", "None of the above"],
-    correct: 1
+    question: "The emitter of a transistor is ..................... doped",
+    options: ["Heavily", "Moderately", "Lightly", "Not"],
+    correct: 0
   },
+
+  // UNIT 3 - Op-Amp
   {
     id: 67,
-    question: "What is a vector space?",
-    options: ["A space consisting of only vectors", "A set of vectors closed under addition and scalar multiplication", "A space that includes both vectors and scalars", "A space that is always three-dimensional"],
-    correct: 1
+    question: "Which of the following electrical characteristics is not exhibited by an ideal op-amp?",
+    options: ["Infinite output resistance", "Infinite bandwidth", "Infinite voltage gain", "Infinite slew rate"],
+    correct: 0
   },
   {
     id: 68,
-    question: "What is the dimension of a vector space?",
-    options: ["The size or length of a vector", "The number of vectors in the space", "The maximum number of linearly independent vectors that span the space", "The number of elements in the basis of the space"],
+    question: "An integrator circuit using an Op Amp has ...................in its feedback path",
+    options: ["Resistor", "inductor", "Capacitor", "Diode"],
     correct: 2
   },
   {
     id: 69,
-    question: "What is the span of a set of vectors?",
-    options: ["The set of all vectors in the vector space", "The linear combination of all vectors in the set", "The set of vectors that are orthogonal to the given set", "The set of vectors that are linearly independent"],
+    question: "Find the output voltage of an ideal op-amp if V1 and V2 are the two input voltages",
+    options: ["V0 = V1 - V2", "V0 = A(V1 - V2)", "V0 = A(V1 + V2)", "V0 = V1 × V2"],
     correct: 1
   },
   {
     id: 70,
-    question: "In a finite-dimensional vector space, what is the maximum number of linearly independent vectors a basis can have?",
-    options: ["0", "1", "The dimension of the vector space", "The size of the vector space"],
-    correct: 2
+    question: "A differentiator circuit using an Op Amp has ...................in its feedback path",
+    options: ["Capacitor", "Resistor", "Diode", "Inductor"],
+    correct: 1
   },
   {
     id: 71,
-    question: "Moore's Law originally stated that the number of transistors on a microchip would double approximately every:",
-    options: ["6 months", "1 year", "2 years", "5 years"],
-    correct: 2
+    question: "A sine wave of 0.5 V peak voltage is applied as an input to an inverting amplifier with R1 = 10 kΩ and Rf = 50 kΩ The output voltage Vo is",
+    options: ["5.2 V peak", "-10 V peak", "-2.5 V peak-peak", "-2.5 V peak"],
+    correct: 3
   },
   {
     id: 72,
-    question: "What fundamental technology trend enabled the continuation of Moore's Law for several decades?",
-    options: ["Miniaturization of transistors", "Increase in clock speed", "Expansion of data storage", "Advancements in software algorithms"],
-    correct: 0
+    question: "The output voltage obtained for an ideal op-amp is by",
+    options: ["Amplifying individual input voltages", "Amplifying products of two input voltage", "Amplifying the difference between the two input voltages", "None of the mentioned"],
+    correct: 2
   },
   {
     id: 73,
-    question: "Which component of a computer is primarily affected by Moore's Law?",
-    options: ["Central Processing Unit (CPU)", "Random Access Memory (RAM)", "Hard Disk Drive (HDD)", "Graphics Processing Unit (GPU)"],
+    question: "The output voltage V0 of an Op Amp integrator is given by",
+    options: ["V0 = -(1/R1Cf)∫Vindt", "V0 = -(1/Cf)∫Vindt", "V0 = -(1/R1Cf)∫Vindt", "V0 = -(1/RfC1)∫Vindt"],
     correct: 0
   },
   {
     id: 74,
-    question: "What is one of the main factors contributing to the end of Moore's Law?",
-    options: ["Decreased demand for computing power", "Physical limits of miniaturization", "Lack of innovation in software development", "Increasing costs of semiconductor production"],
-    correct: 1
+    question: "A sine wave of 0.5 V peak voltage is applied as an input to a non- inverting amplifier with R1 = 10 kΩ and Rf = 50 kΩ The output voltage Vo is",
+    options: ["3 V peak", "2.5 V peak", "-3 V peak", "3 V peak-peak"],
+    correct: 0
   },
   {
     id: 75,
-    question: "Which alternative approaches are being explored to extend computing power beyond the limits of Moore's Law?",
-    options: ["Quantum computing", "Neuromorphic computing", "Optical computing", "All of these"],
-    correct: 3
+    question: "Which is not the ideal characteristic of an op-amp?",
+    options: ["Output impedance is zero", "Input Resistance is zero", "Bandwidth is infinity", "Open loop voltage gain is infinity"],
+    correct: 1
   },
   {
     id: 76,
-    question: "What is the fundamental unit of information in quantum computing?",
-    options: ["Bit", "Byte", "Qubit", "Quantum gate"],
-    correct: 2
+    question: "The output voltage V0 of an Op Amp differentiator is given by",
+    options: ["V0 = -RfC1(dVin/dt)", "V0 = -(1/Cf)∫Vindt", "V0 = -(1/Rf)∫Vindt", "V0 = -(1/RfC1)(dVin/dt)"],
+    correct: 0
   },
   {
     id: 77,
-    question: "In classical computing, information is processed using bits. What are the two possible values for a classical bit?",
-    options: ["0 and 1", "True and False", "-1 and 1", "Red and Blue"],
-    correct: 0
+    question: "A sine wave of 3.5 V peak voltage is applied as an input to a non- inverting amplifier with R1 = 20 kΩ and Rf = 80 kΩ The output voltage Vo is",
+    options: ["-12.5 V peak", "10 V peak", "17.5 V peak", "-5 V peak"],
+    correct: 2
   },
   {
     id: 78,
-    question: "Which property allows qubits to represent multiple states simultaneously in quantum computing?",
-    options: ["Superposition", "Entanglement", "Interference", "Tunnelling"],
-    correct: 0
+    question: "Which factor determines the output voltage of an op-amp?",
+    options: ["Supply voltage", "Both positive and negative saturation voltage", "Negative saturation voltage", "Positive saturation voltage"],
+    correct: 1
   },
   {
     id: 79,
-    question: "In a CNOT gate, you create a(n) _____ with two qubits.",
-    options: ["Superposition", "Entangled state", "Bloch", "Hadamard"],
+    question: "The output voltage swing of a comparator for an applied input voltage depends on",
+    options: ["Regulated power supply voltages", "Dual power supply voltages", "AC signals applied at the terminals of the Op Amp", "DC signals applied at the terminals of the Op Amp"],
     correct: 1
   },
   {
     id: 80,
-    question: "In a quantum circuit, this gate is used to place a qubit into superposition.",
-    options: ["Hadamard", "X-gate", "Bloch", "CNOT"],
-    correct: 0
+    question: "A sine wave of 2 V peak voltage is applied as an input to an inverting amplifier with R1 = 24 kΩ and Rf = 82 kΩ The output voltage Vo is",
+    options: ["-8.833 V peak", "-8.833 V peak-peak", "-6.833 V peak-peak", "-6.833 V peak"],
+    correct: 3
   },
   {
     id: 81,
-    question: "This quantum gate acts on a single qubit and would most be similar to a traditional NOT gate.",
-    options: ["CNOT", "X-Gate", "Hadamard", "Deutsch Gate"],
-    correct: 1
+    question: "An inverting amplifier using an Op Amp with R1 and Rf as the resistors provide an output voltage equal to one of them as",
+    options: ["V0 = -(1 + Rf/R1)Vin", "V0 = (1 + Rf/R1)Vin", "V0 = -(Rf/R1)Vin", "V0 = (Rf/R1)Vin"],
+    correct: 2
   },
   {
     id: 82,
-    question: "What is superposition in quantum computing?",
-    options: ["A state in which a qubit can exist in multiple states simultaneously", "The process of entangling multiple qubits", "A gate used to manipulate qubits", "A unit of quantum information"],
+    question: "A sine wave of 0.5 V peak voltage is applied as an input to a non- inverting amplifier with R1 = 6 kΩ and Rf = 24 kΩ The output voltage Vo is",
+    options: ["2.5 V peak", "-2.5 V peak", "10 V peak", "2.5 V peak-peak"],
     correct: 0
   },
   {
     id: 83,
-    question: "What happens to the entanglement of qubits when they are physically separated",
-    options: ["The entanglement is lost", "The entanglement remains intact", "The entanglement becomes stronger", "The entanglement becomes weaker"],
-    correct: 1
-  },
-  {
-    id: 84,
-    question: "What is the purpose of quantum gates in quantum computing?",
-    options: ["To entangle qubits", "To collapse superposition", "To manipulate qubits", "To measure qubit states"],
-    correct: 2
-  },
-
-  // Unit III: Conductors and Superconductors
-  {
-    id: 85,
-    question: "Which of the following statement correctly describes a metal based on band theory?",
-    options: ["A material possessing moderate band gap", "A material possessing a large band gap", "A material with zero band gap", "A material with infinite band gap"],
-    correct: 2
-  },
-  {
-    id: 86,
-    question: "Solids with high value of conductivity are called:",
-    options: ["Conductors", "Non-metal", "Insulator", "Semi-conductor"],
+    question: "An ideal OP-AMP has following characteristics",
+    options: ["Ri = infinity, A = infinity, Ro = 0", "Ri = 0, A=infinity, Ro = 0", "Ri= infinity, A = 0, Ro = infinity", "Ri= 0, A = infinity, Ro = infinity"],
     correct: 0
   },
   {
-    id: 87,
-    question: "The electrons in valence band are",
-    options: ["Freely moving inside the solid", "Tightly bonded inside the solid", "Lies in the innermost orbits and cannot be made free", "Lies in the outermost orbits and cannot be made free"],
+    id: 84,
+    question: "A non-inverting amplifier using Op Amp with R1 and Rf as the resistors provides an output voltage equal to",
+    options: ["V0 = -(Rf/R1)Vin", "V0 = -(1 + Rf/R1)Vin", "V0 = (Rf/R1)Vin", "V0 = (1 + Rf/R1)Vin"],
+    correct: 3
+  },
+  {
+    id: 85,
+    question: "A non-inverting Op-Amp has a gain of 91 with R1 = 1 kΩ. The resistor in the feedback path must have a value of",
+    options: ["91 kΩ", "90 kΩ", "99 kΩ", "92 kΩ"],
     correct: 1
   },
   {
+    id: 86,
+    question: "For an Op-Amp having differential gain Ad and Common mode gain Ac, CMRR is",
+    options: ["Ad + Ac", "1+ (Ad/Ac)", "Ad/Ac", "Ac/Ad"],
+    correct: 2
+  },
+  {
+    id: 87,
+    question: "A non-inverting Op-Amp has a gain of 61 with R1 = 2 kΩ. The resistor in the feedback path must have a value of",
+    options: ["61 kΩ", "62 kΩ", "121 kΩ", "120 kΩ"],
+    correct: 3
+  },
+  {
     id: 88,
-    question: "Fermi level for a metal is",
-    options: ["Highest energy level occupied by electrons at 0°C", "Average value of all available energy levels", "Highest energy level occupied by electrons at 0 K", "Addition of energy of all available electron energy levels"],
+    question: "Op Amp Comparator is a circuit whose output voltage switches between",
+    options: ["+Vin, -Vin", "+Vo, -Vo", "+Vsat, -Vsat", "None"],
     correct: 2
   },
   {
     id: 89,
-    question: "The free electron theory could not explain which of the following properties?",
-    options: ["Electrical and thermal conductivity of metals", "Thermal and thermal conductivity of non-metal", "Ferromagnetism", "Ohm's law"],
-    correct: 2
+    question: "An inverting Op-Amp has a gain of -61 with R1 = 1 kΩ. The resistor in the feedback path must have a value of",
+    options: ["61 kΩ", "60 kΩ", "59 kΩ", "62 kΩ"],
+    correct: 0
   },
   {
     id: 90,
-    question: "Free electron theory is based on which of the following assumption?",
-    options: ["Electrons are freely moving only at the center of the solid", "Electrons are freely moving through the entire solid", "Electrons can move freely only at the top surface of the solid", "Electrons can move freely only at the bottom surface of the solid"],
-    correct: 1
+    question: "With reference to the output voltage of an inverting Op Amp summer V0 = -(Rf/R1*V1 + Rf/R2*V2 + Rf/R3*V3), if Rf = R1 = R2 = R3 = R, then",
+    options: ["V0 = -(V1 + V2 + V3)", "V0 = -V1 + V2 + V3", "V0 = V1 + V2 + V3", "None of these"],
+    correct: 0
   },
+
+  // UNIT 4 - Oscillators and Feedback
   {
     id: 91,
-    question: "Which statement is correct regarding the influence of temperature on conductivity?",
-    options: ["Conductivity of metals increases with increase in temperature", "Conductivity of metals decreases with increase in temperature", "Conductivity of metals does not change with temperature", "Conductivity of metals increases with square root of temperature"],
-    correct: 1
-  },
-  {
-    id: 92,
-    question: "Mobility of electron is",
-    options: ["Average flow of electrons per unit electric field.", "Average applied field per unit drift velocity.", "Average drift velocity per unit electric field.", "Reciprocal of conductivity per unit charge."],
+    question: "In Colpitts' oscillator, the components used in the feedback network are",
+    options: ["2R and 2C", "2L and 1C", "2C and 1L", "2L and 2C"],
     correct: 2
   },
   {
+    id: 92,
+    question: "With a resistance value of R=1kΩ in a feedback network of RC oscillator, frequency of oscillations generated is 5 kHz. The value of the capacitor C is",
+    options: ["0.0129 μF", "0.129 μF", "0.0219 μF", "129 μF"],
+    correct: 0
+  },
+  {
     id: 93,
-    question: "Flow of electrons is affected by the following",
-    options: ["Thermal vibrations", "Impurity atoms", "Crystal defects", "All the answers"],
-    correct: 3
+    question: "Gain with negative feedback is given by Af=A/(1+Aβ). The feedback factor is",
+    options: ["A", "β", "Af", "Aβ"],
+    correct: 1
   },
   {
     id: 94,
-    question: "Using the classical theory it can be shown that the electrical resistivity ρ and temperature T is given by,",
-    options: ["ρ α T", "ρ α T⁻¹", "ρ α T¹/³", "ρ α T²"],
+    question: "An amplifier has an open loop voltage gain of 1000. If 10% negative voltage series feedback is used, then the closed loop gain is",
+    options: ["9.9", "99.9", "0.9", "990"],
     correct: 0
   },
   {
     id: 95,
-    question: "Matthiessens rule may be written as ρTot = ρphon +ρo, which of the following statement(s) is/are true? a. ρphon is temperature dependent b. ρo is temperature dependent c. ρo is due to lattice vibrations",
-    options: ["(a) only", "(a) and (b)", "(b) only", "(c) only"],
-    correct: 0
-  },
-  {
-    id: 96,
-    question: "Relaxation time may be defined as the time taken by an electron to reduce its velocity to_____ its initial value.",
-    options: ["1/2", "1/3", "1/e", "1/2e"],
-    correct: 2
-  },
-  {
-    id: 97,
-    question: "The average distance travelled by a free electron between two successive collisions with lattice ions of a metallic crystal is called",
-    options: ["mean free path", "free path", "drift velocity", "mean collision time"],
-    correct: 0
-  },
-  {
-    id: 98,
-    question: "According to Pauli's exclusion principle, an energy level can accommodate not more than_____ electrons.",
-    options: ["one", "two", "three", "four"],
+    question: "For an amplifier with negative feedback, the closed loop gain is given by",
+    options: ["Af = A/(1 - Aβ)", "Af = A/(1 + Aβ)", "Af = A/(1 - β)", "Af = A/(1 - Vβ)"],
     correct: 1
   },
   {
+    id: 96,
+    question: "In a practical oscillator circuit, to start oscillations, the loop gain Aβ must be",
+    options: ["Not Equal to 1", "Equal to 1", "Less than 1", "Greater than 1"],
+    correct: 0
+  },
+  {
+    id: 97,
+    question: "An amplifier has an open loop voltage gain of 2000. If 40% negative voltage series feedback is used, then the closed loop gain is",
+    options: ["249", "24.9", "0.249", "2.49"],
+    correct: 3
+  },
+  {
+    id: 98,
+    question: "In an amplifier, positive feedback leads to",
+    options: ["Noise", "Amplification", "Breakdown", "Oscillations"],
+    correct: 3
+  },
+  {
     id: 99,
-    question: "The probability of occupation of the electrons at any temperature is given as,",
-    options: ["Option (i)", "Option (ii)", "Option (iii)", "Option (iv)"],
+    question: "For an amplifier with positive feedback, the closed loop gain is given by",
+    options: ["Af = A/(1 - β)", "Af = A/(1 + Aβ)", "Af = A/(1 - Aβ)", "Af = A/(1 - Vβ)"],
     correct: 2
   },
   {
     id: 100,
-    question: "The relationship between current density J and electric field E is",
-    options: ["J = σE", "J = σ / E", "J = σ/2E", "J = 1/ σ E"],
-    correct: 0
+    question: "What is an oscillator?",
+    options: ["A rectifier", "A generator", "An amplifier with positive feedback", "An amplifier with negative feedback"],
+    correct: 2
   },
   {
     id: 101,
-    question: "The drift velocity is described as",
-    options: ["vd = eEτ/m", "vd = Eτ/m", "vd = eτ/m", "vd = eE/n"],
-    correct: 0
+    question: "An amplifier has an open loop voltage gain of 100,000. If the negative voltage series feedback factor is 0.01, then the closed loop gain is",
+    options: ["9.9", "99.9", "0.9", "990"],
+    correct: 1
   },
   {
     id: 102,
-    question: "Which one is correct about classical free electron theory:",
-    options: ["Free electrons are responsible for the electrical conductivity of metal", "Semiconductors can be explained properly", "Insulators can be explained properly", "Ohm's law cannot be derived using free electron theory"],
-    correct: 0
+    question: "In an amplifier with positive feedback, open loop gain A is 20 with feedback factor β as 0.04. Then the gain of the amplifier with feedback is",
+    options: ["200", "50", "100", "infinity"],
+    correct: 2
   },
   {
     id: 103,
-    question: "According to free electron theory",
-    options: ["Valence electrons are tightly bound with the atom", "Valence electrons are weakly bound with the atom", "There are no free electrons in metal", "Some valence electrons are weakly bound and some tightly bound"],
-    correct: 1
-  },
-  {
-    id: 104,
-    question: "Which one is correct about free electrons",
-    options: ["valence electrons of metals move throughout the material.", "valence electrons of metals do not move throughout the material", "bound electrons of metals move throughout the material", "All electrons of metals move throughout the material"],
-    correct: 0
-  },
-  {
-    id: 105,
-    question: "Electrons in conductors will follow",
-    options: ["Bose-Einstein distribution", "Fermi-Dirac distribution", "Maxwell-Boltzmann distribution", "Boltzmann distribution"],
-    correct: 1
-  },
-  {
-    id: 106,
-    question: "Which one will be correct about resistance in metal",
-    options: ["Scattering of free electrons in a metal by structural defects and lattice vibrations", "Scattering of free electrons in a metal only by lattice vibrations", "Scattering of free electrons in a metal only by structural defects", "Scattering of free electrons in a metal by bound electrons"],
-    correct: 0
-  },
-  {
-    id: 107,
-    question: "Which of the following about Fermi-Dirac distribution is false?",
-    options: ["When E = EF, the probability of finding an electron with energy equal to the Fermi energy in a metal is ½ at any temperature.", "At T = 0 K all the energy level up to EF are occupied and all the energy levels above EF are empty.", "When T > 0 K, some levels above EF are partially filled while some levels below EF are partially empty.", "When T = 0 K, some levels above EF are partially filled while some levels below EF are empty."],
+    question: "The feedback factor of Colpitt's oscillator is given by",
+    options: ["β = Af/A", "β = C1/C2", "β = A/Af", "β = C2/C1"],
     correct: 3
   },
   {
-    id: 108,
-    question: "Examples of Fermions are",
-    options: ["Electrons", "Photons", "Phonons", "Atoms"],
+    id: 104,
+    question: "Which of the following is not an advantage of a negative feedback amplifier?",
+    options: ["Higher input impedance", "Unstable gain", "Reduction in noise", "Lower output impedance"],
+    correct: 1
+  },
+  {
+    id: 105,
+    question: "An amplifier has an open loop voltage gain of 10,000. If the negative voltage series feedback factor is 0.01, then the closed loop gain is",
+    options: ["990", "9.9", "0.99", "99"],
+    correct: 3
+  },
+  {
+    id: 106,
+    question: "The feedback factor of Hartley oscillator is given by",
+    options: ["β = A/Af", "β = L2/L1", "β = L1/L2", "β = Af/A"],
+    correct: 2
+  },
+  {
+    id: 107,
+    question: "Which among the following parameters acts as an initiator for the operation of an oscillator in the absence of input signal?",
+    options: ["Noise voltage", "Noise power", "Noise current", "Noise temperature"],
     correct: 0
   },
   {
+    id: 108,
+    question: "In which type of oscillator circuit capacitor split representation can be seen in tank circuit?",
+    options: ["Wein bridge", "RC phase shift", "Hartley", "Colpitts"],
+    correct: 3
+  },
+  {
     id: 109,
-    question: "Which of the following assumptions of the quantum free electron theory is/are true. a) The energy values of the conduction electrons are quantized. b) The distribution of electrons in the various allowed energy levels occur as per Pauli's exclusion principle. c) The electrons travel with a constant potential inside the metal but confined within its boundaries.",
-    options: ["(a) only", "(b) only", "(a) and (c)", "(a), (b) and (c)"],
+    question: "In an RC phase shift oscillator, the resistances in the feedback network are 4.7 kΩ and capacitor values are C = 0.47µF. The frequency of oscillations is",
+    options: ["0.29413 Hz", "294.13 Hz", "2941.3 Hz", "29.413 Hz"],
     correct: 3
   },
   {
     id: 110,
-    question: "According to quantum theory, the electrical conductivity of a metal is due to those free electrons which are",
-    options: ["very close to Fermi level", "much below the Fermi level", "valence band", "None of the answers"],
-    correct: 0
+    question: "The tank circuit of a Colpitt's oscillator has L= 5 mH with C1 = 22.22 nF and C2 = 2.22 nF. The feedback factor β is",
+    options: ["0.001", "0.1", "0.01", "1"],
+    correct: 1
   },
   {
     id: 111,
-    question: "The mobility of electrons in copper is 3.5 × 10⁻³ m²V⁻¹s⁻¹. For an applied electric field strength of 2 V/m, the drift velocity of the free electrons is",
-    options: ["0.7 × 10⁻³ m/s", "7 × 10⁻³ m/s", "1.75 × 10⁻³ m/s", "7 × 10³ m/s"],
-    correct: 1
+    question: "An RC network in an RC phase shift oscillator has C = 0.1 µF. The frequency of oscillations is 1 kHz. The value of R used in the feedback network is",
+    options: ["650 Ω", "500 Ω", "600 Ω", "1 KΩ"],
+    correct: 0
   },
   {
     id: 112,
-    question: "The mobility of electrons in copper 3×10³ m²V⁻¹s⁻¹ assuming e =1.6×10⁻¹⁹ C and me = 9.1×10⁻³¹ kg. the mean collision time is",
-    options: ["16.2 × 10⁻¹³ s", "1.7 × 10⁻¹⁵ s", "1.8 × 10⁻¹⁵ s", "17.06 × 10⁻¹⁵ s"],
-    correct: 3
+    question: "RC phase shift oscillator is a",
+    options: ["Low frequency oscillator", "High frequency oscillator", "Stable frequency oscillator", "Relaxation oscillator"],
+    correct: 0
   },
   {
     id: 113,
-    question: "Using Fermi distribution function, the value of f(E) for (E – EF) = 0.01 eV at 200 K is",
-    options: ["0.36", "0.64", "0.45", "0.55"],
-    correct: 0
+    question: "In a Hartley oscillator, if L1 = 5 mH, L2 = 10 mH and C = 0.01µF, the value of the feedback factor β is",
+    options: ["50", "0.05", "0.5", "500"],
+    correct: 2
   },
   {
     id: 114,
-    question: "A uniform silver wire has a resistivity of 1.54×10⁻⁸ Ωm at room temperature. For an electric field along the wire of 1 Vcm⁻¹, calculate (a) average drift velocity of electron and (b) mobility.",
-    options: ["(a) 0.3 m/s and (b) 10.0 × 10⁻³ m²/Vs", "(a) 0.7 cm/s and (b) 70.0 × 10⁻³ m²/Vs", "(a) 3.0 m/s and (b) 17 × 10⁻³ m²/Vs", "(a) 0.7 m/s and (b) 7.0 × 10⁻³ m²/Vs"],
-    correct: 3
-  },
-  {
-    id: 115,
-    question: "The magnetic lines of force cannot penetrate the body of a superconductor, a phenomenon is known as",
-    options: ["Isotopic effect", "BCS theory", "Meissner effect", "Silsbee's effect"],
-    correct: 2
-  },
-  {
-    id: 116,
-    question: "The minimum amount of current passed through the body of superconductor in order to destroy the superconductivity is called",
-    options: ["Induced current", "Critical current", "Eddy current", "Hall current"],
+    question: "The frequency of oscillations generated by RC phase shift oscillator is",
+    options: ["1/(2πRC)", "1/(2π√6RC)", "1/(2π√6RC)", "1/(2π6RC)"],
     correct: 1
   },
   {
-    id: 117,
-    question: "In superconductivity the conductivity of a material becomes",
-    options: ["Zero", "Finite", "Infinite", "None of the answers"],
-    correct: 2
-  },
-  {
-    id: 118,
-    question: "In superconductors the temperature at which conductivity of a material becomes infinite is called",
-    options: ["Critical temperature", "Absolute temperature", "Mean temperature", "Crystallization temperature"],
+    id: 115,
+    question: "An RC network in an RC phase shift oscillator has C = 0.2 µF. The frequency of oscillations is 1 kHz. The value of R used in the feedback network is",
+    options: ["325 Ω", "500 Ω", "600 Ω", "1KΩ"],
     correct: 0
   },
   {
+    id: 116,
+    question: "Hartley oscillator is a",
+    options: ["Relaxation oscillator", "Low frequency oscillator", "Stable frequency oscillator", "High frequency oscillator"],
+    correct: 3
+  },
+  {
+    id: 117,
+    question: "In a Hartley oscillator, if L1 = 7 mH, L2 = 10 mH and C = 0.01µF, the value of the feedback factor β is",
+    options: ["0.7", "0.07", "70", "700"],
+    correct: 0
+  },
+  {
+    id: 118,
+    question: "The frequency of oscillations generated by Colpitts oscillator is",
+    options: ["1/(2πLC)", "1/(2π√LeqC)", "1/(2π√L)", "1/(2π√LCeq)"],
+    correct: 3
+  },
+  {
     id: 119,
-    question: "The superconducting state is perfectly _____ in nature.",
-    options: ["Diamagnetic", "Paramagnetic", "Ferromagnetic", "Ferrimagnetic"],
+    question: "The components in the feedback network of Hartley and Colpitt's oscillators are",
+    options: ["L & C components", "R & C components", "Only L Component", "None of these"],
     correct: 0
   },
   {
     id: 120,
-    question: "The binding energy of a Cooper pair is of the order of _______",
-    options: ["10⁻³ eV", "10³ eV", "10⁻³ J", "10³ J"],
-    correct: 0
+    question: "What is an angle of phase shift for each designed RC network in the Phase Shift Oscillator circuit?",
+    options: ["30°", "45°", "60°", "90°"],
+    correct: 2
   },
   {
     id: 121,
-    question: "The electron pairs in a superconductor are ______",
-    options: ["Bosons", "Leptons", "Hydrons", "Fermions"],
-    correct: 0
+    question: "In a Hartley oscillator, if L1 = 2 mH, L2 = 8 mH and C = 0.01µF, the value of the feedback factor β is",
+    options: ["25", "0.025", "250", "0.25"],
+    correct: 3
   },
   {
     id: 122,
-    question: "The transition to normal state occurs abruptly at a critical magnetic field (Hc) in",
-    options: ["Type-I superconductor", "Type-II superconductor", "Both Type-I and Type-II superconductors", "Conductors"],
-    correct: 0
+    question: "The frequency of oscillations generated by Hartley oscillator is",
+    options: ["1/(2π√C)", "1/(2π√LCeq)", "1/(2π√LeqC)", "1/(2πLC)"],
+    correct: 2
   },
   {
     id: 123,
-    question: "The magnetic susceptibility (χ) in superconductor is",
-    options: ["positive", "zero", "negative", "infinity"],
+    question: "In an RC-Phase shift oscillator, the components used in the feedback network are",
+    options: ["4R and 4C", "1R and 1C", "3R and 3C", "2R and 2L"],
     correct: 2
   },
   {
     id: 124,
-    question: "Hard superconductors are also called as __________",
-    options: ["Type-I superconductor", "Type-II superconductor", "Both Type-I and Type-II superconductors", "Conductors"],
-    correct: 1
-  },
-  {
-    id: 125,
-    question: "Silsbee's rule gives the relation between",
-    options: ["current and critical temperature", "current and critical magnetic field", "current and isotopic mass", "critical current and critical magnetic field."],
-    correct: 3
-  },
-
-  // Unit IV: Semiconductors
-  {
-    id: 126,
-    question: "Solids with high value of conductivity are called:",
-    options: ["Conductors", "Non-metal", "Insulator", "Semi-conductor"],
+    question: "In a Colpitts oscillator, if C1 = 100 pF, C2 = 60 pF and L = 0.422 H, the value of the feedback factor β is",
+    options: ["0.6", "0.06", "60", "600"],
     correct: 0
   },
   {
-    id: 127,
-    question: "Fermi level for a metal is",
-    options: ["Highest energy level occupied by electrons at 0°C", "Average value of all available energy levels", "Highest energy level occupied by electrons at 0 K", "Addition of energy of all available electron energy levels"],
+    id: 125,
+    question: "The criterion that determines the mathematical condition to generate sustained oscillations is",
+    options: ["Pinch off", "Shockley", "Barkhausen", "Threshold"],
+    correct: 2
+  },
+
+  // UNIT 5 - Communication Systems and Embedded Systems
+  {
+    id: 126,
+    question: "Fiber optic cable is a ----------- type of channel.",
+    options: ["Wireless channel", "Free space channel", "Wired channel", "Radio channel"],
     correct: 2
   },
   {
+    id: 127,
+    question: "The mechanism of using the same frequency band within a geographical area in a Cellular or mobile communication system is referred to as",
+    options: ["Frequency reuse", "Efficiency", "Reliability", "Bandwidth coordinator"],
+    correct: 0
+  },
+  {
     id: 128,
-    question: "The probability of occupation of the electrons at any temperature is given as,",
-    options: ["Option (a)", "Option (b)", "Option (c)", "Option (d)"],
+    question: "Which of the following is true about microprocessors?",
+    options: ["It has interfacing circuits", "It has an internal memory", "It contains ALU, CU, and registers", "It uses Harvard architecture"],
     correct: 2
   },
   {
     id: 129,
-    question: "The relationship between current density J and electric field E is",
-    options: ["J = σE", "J = σ / E", "J = σ/2E", "J = 1/ σ E"],
+    question: "Best example for natural noise is",
+    options: ["Rain", "Traffic noise", "Industrial noise", "Sound pollution"],
     correct: 0
   },
   {
     id: 130,
-    question: "Intrinsic semiconductors are those",
-    options: ["Which are made of semiconductor material in its purest form", "Which have zero energy gap", "Which have more electrons than holes", "Which are available locally"],
-    correct: 0
+    question: "The radio channel used for transmission of information from a base station to a mobile station is called,",
+    options: ["Reverse channel", "Control channel", "Mobile channel", "Forward channel"],
+    correct: 3
   },
   {
     id: 131,
-    question: "A pure semiconductor behaves like an insulator at 0 K because",
-    options: ["There is no recombination of electrons with holes", "Drift velocity of free electrons is very small", "Free electrons are not available for current conduction", "Energy possessed by electrons at that low temperature is almost zero"],
-    correct: 2
+    question: "Which one of the following offers external chips for memory and peripheral interface circuits?",
+    options: ["Microcontroller", "Embedded system", "Peripheral System", "Microprocessor"],
+    correct: 3
   },
   {
     id: 132,
-    question: "Which of the following about Fermi-Dirac distribution is false?",
-    options: ["When E = EF, the probability of finding an electron with energy equal to the Fermi energy in a metal is ½ at all temperatures.", "At T = 0 K all the energy level up to EF are occupied and all the energy levels above EF are empty.", "When T > 0 K, some levels above EF are partially filled while some levels below EF are partially empty.", "When T = 0 K, some levels above EF are partially filled while some levels below EF are empty."],
-    correct: 3
-  },
-  {
-    id: 133,
-    question: "Examples of Fermions are",
-    options: ["Electrons", "Photons", "Phonons", "Atoms"],
-    correct: 0
-  },
-  {
-    id: 134,
-    question: "Using Fermi distribution function, the value of f(E) for (E – EF) = 0.01 eV at 200 K is",
-    options: ["0.36", "0.64", "0.45", "0.55"],
-    correct: 0
-  },
-  {
-    id: 135,
-    question: "An elemental semiconductor is formed by ……… bonds.",
-    options: ["Covalent", "Electrovalent", "Co-ordinate", "Ionic"],
-    correct: 0
-  },
-  {
-    id: 136,
-    question: "A semiconductor has ………… temperature coefficient of resistance.",
-    options: ["Positive", "Zero", "Negative", "Infinite"],
+    question: "Best example for man-made noise is",
+    options: ["Rain", "Radiations from the sun, stars", "Traffic noise", "Reflections from Earth"],
     correct: 2
   },
   {
-    id: 137,
-    question: "The most commonly used semiconductor is ………..",
-    options: ["Gallium", "Silicon", "Carbon", "Arsenide"],
+    id: 133,
+    question: "In a cellular radio system, the __________________ connects the cellular base stations and mobile stations to the Public Switched Telephone Networks.",
+    options: ["Base station(BS)", "Mobile Switching Center (MSO)", "Forward Control Channel (FCC)", "Time Division Multiple Access (TDMA)"],
     correct: 1
   },
   {
-    id: 138,
-    question: "A semiconductor has generally ……………… valence electrons.",
-    options: ["2", "3", "6", "4"],
+    id: 134,
+    question: "The audio frequency range is",
+    options: ["30 to 34 kH", "300 Hz to 3.4 kHz", "20 Hz to 20 kHz", "10 to 10 kHz"],
+    correct: 2
+  },
+  {
+    id: 135,
+    question: "The speech signal frequency range is",
+    options: ["20 Hz to 20 kHz", "30 to 34 kHz", "10 to 10 kHz", "300 Hz to 3.4 kHz"],
     correct: 3
+  },
+  {
+    id: 136,
+    question: "Which of the following is true about an Embedded System?",
+    options: ["An embedded system usually performs a specialized operation and does the same repeatedly", "It must have a memory, as its software usually embeds in ROM", "It must have connected peripherals to connect input and output devices.", "All of them"],
+    correct: 3
+  },
+  {
+    id: 137,
+    question: "The following frequency band is utilized in cellular or mobile communication system,",
+    options: ["Audible frequency", "Audio frequency", "Unlicensed frequency", "Radio frequency"],
+    correct: 3
+  },
+  {
+    id: 138,
+    question: "The loss in the transmission is minimum for the following type of wire",
+    options: ["Flat cable", "Copper wire", "Fiber optic cable", "Coaxial cable"],
+    correct: 2
   },
   {
     id: 139,
-    question: "When a pentavalent impurity is added to a pure semiconductor, it becomes ………",
-    options: ["An insulator", "An intrinsic semiconductor", "p-type semiconductor", "n-type semiconductor"],
-    correct: 3
+    question: "On which component is modulation performed?",
+    options: ["Transmitter", "Signal", "Jammer", "None of the above"],
+    correct: 0
   },
   {
     id: 140,
-    question: "Addition of pentavalent impurity to a semiconductor creates …….",
-    options: ["Donor electrons", "Holes", "Valence electrons", "Bound electrons"],
+    question: "What is modulated signal?",
+    options: ["It is the product of modulating signal and carrier signal", "It is the product of modulating signal and information signal", "It is an input signal", "None of the above"],
     correct: 0
   },
   {
     id: 141,
-    question: "A pentavalent impurity has ………. valence electrons",
-    options: ["3", "5", "4", "6"],
+    question: "What is the primary difference between a microcontroller and a microprocessor?",
+    options: ["Microcontrollers have higher clock speeds than microprocessors.", "Microcontrollers have built-in memory and peripherals.", "Microprocessors have built-in ADCs and DACs", "Microprocessors are smaller in size"],
     correct: 1
   },
   {
     id: 142,
-    question: "An n-type semiconductor is ………",
-    options: ["Positively charged", "Negatively charged", "Electrically neutral", "None of the answers"],
+    question: "Which channel type is used for initiating mobile calls from the mobile device to base station?",
+    options: ["Forward Control Channel (FCC)", "Forward Voice Channel (FVC)", "Reverse Control Channel (RCC)", "Reverse Voice Channel (RVC)"],
     correct: 2
   },
   {
     id: 143,
-    question: "A trivalent impurity has ….. valence electrons",
-    options: ["4", "5", "6", "3"],
-    correct: 3
-  },
-  {
-    id: 144,
-    question: "Addition of trivalent impurity to a semiconductor creates …….",
-    options: ["Holes", "Donor electrons", "Valence electrons", "Bound electrons"],
+    question: "The soft handover of an active call to a new frequency band when a mobile user crosses a cell boundary.",
+    options: ["Hand off", "Channel efficiency", "Frequency reuse", "Frequency Division Duplexing"],
     correct: 0
   },
   {
+    id: 144,
+    question: "What is the primary reason mobile communication is referred to as 'Cellular communication'?",
+    options: ["It uses cells to store energy for mobile devices", "The communication signals are powered by biological cells", "It involves mobile devices and a base station within a small geographical area called a cell.", "It is designed to mimic the structure of biological cells."],
+    correct: 2
+  },
+  {
     id: 145,
-    question: "A hole in a semiconductor is defined as …………….",
-    options: ["A free electron", "Electron vacancy", "A free proton", "A free neutron"],
+    question: "In a cellular system, a 'cluster' is defined as:",
+    options: ["A single base station serving multiple mobile users.", "A group of cells that collectively use the complete set of available frequencies.", "The central Mobile Switching Centre (MSC) and all its connected base stations.", "The transmission media connecting the transmitter and receiver."],
     correct: 1
   },
   {
     id: 146,
-    question: "As the doping to a pure semiconductor increases, the bulk resistance of the semiconductor ………..",
-    options: ["Remains the same", "Increases", "Decreases", "Becomes zero"],
-    correct: 2
+    question: "What is the primary purpose of ROM in an embedded system?",
+    options: ["To store the code or program that the user cannot change", "To store temporary data for processing", "To allow users to change the firmware frequently", "To interface with external communication modules"],
+    correct: 0
   },
   {
     id: 147,
-    question: "In an intrinsic semiconductor, current conduction is due to …….",
-    options: ["Only holes", "Only electrons", "Both holes and electrons", "None of the answers"],
-    correct: 2
+    question: "What is the function of a Sensor in an embedded system?",
+    options: ["To convert signals into physical action", "To display information to the user", "To process data without interacting with the real world", "To convert energy from one form to another for measurement or control, acting as an input device"],
+    correct: 3
   },
   {
     id: 148,
-    question: "When a pure semiconductor is heated, its resistance ………….",
-    options: ["Increases", "Decreases", "Remains the same", "Can't say"],
-    correct: 1
+    question: "Which of the following is an example of an Actuator?",
+    options: ["Electric motor", "Humidity sensor", "PIR (passive infrared) sensor", "Keypad"],
+    correct: 0
   },
   {
     id: 149,
-    question: "In an intrinsic semiconductor, the number of free electrons ………",
-    options: ["Equals the number of holes", "Is greater than the number of holes", "Is less than the number of holes", "None of the answers"],
-    correct: 0
-  },
-  {
-    id: 150,
-    question: "At room temperature, an intrinsic semiconductor has ……….",
-    options: ["Holes only", "Electrons and holes", "Electrons only", "No holes and no electrons"],
-    correct: 1
-  },
-  {
-    id: 151,
-    question: "At absolute temperature, an intrinsic semiconductor has ……….",
-    options: ["A few free electrons", "Many holes", "Many free electrons", "No holes and no free electrons"],
+    question: "The I/O subsystem of an embedded system facilitates interaction with the external world primarily through:",
+    options: ["Only memory modules", "Only the core processor", "Communication interfaces like Wi-Fi or Bluetooth.", "Sensors and actuators connected to the input and output ports"],
     correct: 3
-  },
-  {
-    id: 152,
-    question: "Which of the following is known as indirect band gap semiconductors?",
-    options: ["Germanium", "GaAs", "GaAsP", "Carbon"],
-    correct: 0
-  },
-  {
-    id: 153,
-    question: "Which of the following is a semiconductor",
-    options: ["Diamond", "Arsenic", "Phosphorous", "Gallium arsenide"],
-    correct: 3
-  },
-  {
-    id: 154,
-    question: "In an intrinsic semiconductor, the Fermi level",
-    options: ["Lies at the middle of the forbidden energy gap.", "Is near the conduction band.", "Is near the valence band.", "May be anywhere in the forbidden energy gap."],
-    correct: 0
-  },
-  {
-    id: 155,
-    question: "For silicon, the energy gap at 300 K is",
-    options: ["0.7 J", "1.1 J", "1.1 eV", "0.7 eV"],
-    correct: 2
-  },
-  {
-    id: 156,
-    question: "The forbidden gap for germanium is,",
-    options: ["0.7 J", "0.7 eV", "1.1 eV", "1.1 J"],
-    correct: 1
-  },
-  {
-    id: 157,
-    question: "In a N-type semiconductor, the position of Fermi-level is",
-    options: ["Close to the valance band", "in the middle of the energy band gap", "close to the conduction band", "Can be any where"],
-    correct: 2
-  },
-  {
-    id: 158,
-    question: "The mobility of electrons in a material is expressed in unit of:",
-    options: ["V/s", "m²/V-s", "m²/s", "J/K"],
-    correct: 1
-  },
-  {
-    id: 159,
-    question: "The energy gap in a semiconductor",
-    options: ["Increases with temperature", "Does not change with temperature", "Decreases with temperature", "Is zero"],
-    correct: 1
-  },
-  {
-    id: 160,
-    question: "Donor impurity atoms in semiconducting material results a new",
-    options: ["Wide energy band", "Narrow energy band", "Discrete energy level just below conduction band", "Discrete energy level just above valance band"],
-    correct: 2
-  },
-  {
-    id: 161,
-    question: "Hall Effect is clearly visible in _______________",
-    options: ["Insulators", "Semiconductors", "Super conductors", "Non metals"],
-    correct: 1
-  },
-  {
-    id: 162,
-    question: "Which of the following represents correct expression for Lorentz force?",
-    options: ["BeV", "BV", "eV", "B"],
-    correct: 0
-  },
-  {
-    id: 163,
-    question: "Hall effect can be used to measure",
-    options: ["Magnetic field intensity", "Mobility", "Carrier concentration", "All the answers"],
-    correct: 3
-  },
-  {
-    id: 164,
-    question: "Which of the following parameters can't be found with Hall Effect?",
-    options: ["Type of semiconductors (p or n type)", "Conductivity", "Carrier concentration", "Area of the device"],
-    correct: 3
-  },
-  {
-    id: 165,
-    question: "In the Hall Effect, the electric field is in X direction and the velocity is in Y direction. Then the direction of the magnetic field is",
-    options: ["X", "Y", "Z", "XY plane"],
-    correct: 2
-  },
-  {
-    id: 166,
-    question: "The number of electrons in a semiconductor is 10²⁰. Then the Hall coefficient is",
-    options: ["0.625", "0.0625", "6.25", "62.5"],
-    correct: 1
-  },
-  {
-    id: 167,
-    question: "Calculate the conductivity of silicon doped with 10²¹ atoms m⁻³ of boron if the mobility of holes is 0.048 m²v⁻¹s⁻¹.",
-    options: ["76.8/Ωm", "7.68/Ωm", "7.68 Ωm", "0.768/Ωm"],
-    correct: 1
-  },
-  {
-    id: 168,
-    question: "Calculate the resistivity of intrinsic germanium if the intrinsic carrier density is 2.5 x 10¹⁹ m⁻³ assuming electron and hole mobilities of 0.38 and 0.18 m²v⁻¹s⁻¹ respectively.",
-    options: ["0.45/Ωm", "0.045 Ωm", "0.45 Ωm", "4.50 Ωm"],
-    correct: 2
-  },
-  {
-    id: 169,
-    question: "A semiconductor sample of thickness 1.2 x 10⁻⁴m is placed in a magnetic field of 0.2T acting perpendicular to its thickness. The Hall voltage generated when a current of 100 mA passes through it is (Assume the carrier concentration to be 10²³ m⁻³)",
-    options: ["0.123 V", "0.0123 V", "1.23 V", "0.0012 V"],
-    correct: 1
-  },
-  {
-    id: 170,
-    question: "Intrinsic silicon has a carrier concentration of 1.1 x 10¹⁶ m⁻³. If the mobilities of electrons and holes are 0.17 and 0.035 m²v⁻¹s⁻¹ respectively at room temperature, the resistivity of silicon is",
-    options: ["0.277x10³ Ωm", "27.7x10³ Ωm", "2.77x10³ Ωm", "0.0277x10³ Ωm"],
-    correct: 2
-  },
-  {
-    id: 171,
-    question: "The compound gallium arsenide has an intrinsic conductivity of 10⁻⁶ ohm⁻¹ m⁻¹ at 20°C. How many electrons have jumped the forbidden energy gap? [Given: μe = 0.88 m²V⁻¹s⁻¹ and μh = 0.04 m²V⁻¹s⁻¹]",
-    options: ["6.79 x10³ m⁻³", "0.679 x10³ m⁻³", "67.9 x10³ m⁻³", "0.0679 x10³ m⁻³"],
-    correct: 0
-  },
-  {
-    id: 172,
-    question: "Measurement of Hall coefficient enables the determination of :",
-    options: ["Temperature coefficient and thermal conductivity", "Mobility and carrier concentration", "Fermi level and forbidden energy gap", "Area of the device"],
-    correct: 1
-  },
-  {
-    id: 173,
-    question: "For a particular material, the Hall coefficient is found to be zero. The material is",
-    options: ["Intrinsic semiconductor", "Extrinsic semiconductor", "Metal", "Insulator"],
-    correct: 3
-  },
-  {
-    id: 174,
-    question: "What happens to the Hall voltage in a conductor if the magnetic field is reversed (i.e., its direction is flipped)?",
-    options: ["The Hall voltage becomes zero.", "The Hall voltage changes direction but remains the same magnitude.", "The Hall voltage doubles in magnitude.", "The Hall voltage remains unchanged."],
-    correct: 1
-  },
-  {
-    id: 175,
-    question: "In which direction does the Hall voltage develop in a conductor when a magnetic field is applied perpendicular to the current?",
-    options: ["Parallel to the current direction", "Perpendicular to both the magnetic field and the current direction", "In the same direction as the magnetic field", "Opposite to the magnetic field direction"],
-    correct: 1
-  },
-  {
-    id: 176,
-    question: "An intrinsic semiconductor, at the absolute zero temperature, behaves like which one of the following?",
-    options: ["Insulator", "Superconductor", "n-type semiconductor", "p-type semiconductor"],
-    correct: 0
-  },
-  {
-    id: 177,
-    question: "In intrinsic semiconductors, number of electrons is ___________ number of holes",
-    options: ["equal to", "greater than", "less than", "none of the above"],
-    correct: 0
-  },
-  {
-    id: 178,
-    question: "When a pure semiconductor is heated, its resistance",
-    options: ["goes up", "goes down", "remains the same", "none of the above"],
-    correct: 1
-  },
-  {
-    id: 179,
-    question: "Intrinsic semiconductor at room temperature will have ______available for conduction.",
-    options: ["Electrons", "Holes", "Both electrons and holes", "None of the above"],
-    correct: 2
-  },
-  {
-    id: 180,
-    question: "The density of charge carriers in a pure semiconductor is proportional to",
-    options: ["exp(-Eg/kT)", "exp(-2Eg/kT)", "exp((-Eg/kT²)", "exp(-Eg/2kT)"],
-    correct: 3
-  },
-  {
-    id: 181,
-    question: "In an intrinsic semiconductor",
-    options: ["σ = n e μe e", "σ = n h μh e", "σ = ni e (μe+μh)", "ne μe e > nh μh e"],
-    correct: 2
-  },
-  {
-    id: 182,
-    question: "A semiconductor has generally ……………… valence electrons.",
-    options: ["2", "3", "4", "5"],
-    correct: 2
-  },
-  {
-    id: 183,
-    question: "A semiconductor has ………… temperature coefficient of resistance.",
-    options: ["Positive", "Negative", "Both positive and negative", "Infinite"],
-    correct: 1
-  },
-  {
-    id: 184,
-    question: "Which of the following statements about the Hall effect in is true?",
-    options: ["The Hall effect cannot occur in semiconductors", "The Hall effect occurs only in metals.", "The Hall effect can provide information about the concentration and type of charge carriers", "The Hall effect is observed only at very low temperatures"],
-    correct: 2
-  },
-  {
-    id: 185,
-    question: "What is the primary function of a solar cell?",
-    options: ["To store solar energy in chemical form", "To reflect sunlight to solar heaters", "To convert sunlight directly into electrical energy", "To absorb and retain heat from sunlight"],
-    correct: 2
-  },
-
-  // Unit V: Lasers & Optical Fibers
-  {
-    id: 186,
-    question: "Important characteristic of laser beam is",
-    options: ["Interference", "Diffraction", "Dispersion", "Coherence"],
-    correct: 3
-  },
-  {
-    id: 187,
-    question: "Emission of a photon by an excited atom due to interaction with a passing photon nearby is called",
-    options: ["Spontaneous emission", "Induced absorption", "Stimulated emission", "Thermionic emission"],
-    correct: 2
-  },
-  {
-    id: 188,
-    question: "Metastable states are",
-    options: ["Ground state energy states.", "Excited state energy levels in which electrons stay for very short interval of time.", "Excited state energy levels in which electron can stay for unusually long time.", "Nuclear energy states."],
-    correct: 2
-  },
-  {
-    id: 189,
-    question: "The required condition to achieve laser action in a system is",
-    options: ["State of population inversion", "Excitation source", "A resonant cavity", "All the three"],
-    correct: 3
-  },
-  {
-    id: 190,
-    question: "The purpose of the optical cavity in a laser is to:",
-    options: ["Convert electrical energy into light", "Amplify the light through multiple passes between mirrors", "Filter out unwanted frequencies of light", "Focus the light into a beam"],
-    correct: 1
-  },
-  {
-    id: 191,
-    question: "In a laser, the mirrors are there on either side of the device",
-    options: ["In order to filter the heat & leave out only the light.", "To protect the eyes of the observer.", "To save energy of the excitation source.", "So that same photons continue to cause further batches of stimulated transitions."],
-    correct: 3
-  },
-  {
-    id: 192,
-    question: "Nd:YAG laser is a",
-    options: ["Two level laser", "Three level laser", "Four level laser", "Five level laser"],
-    correct: 2
-  },
-  {
-    id: 193,
-    question: "In He-Ne laser, the ratio of He to Ne gas molecules is of the order",
-    options: ["1:10", "1:1", "10:1", "100:1"],
-    correct: 2
-  },
-  {
-    id: 194,
-    question: "The pumping source in Nd:YAG laser is",
-    options: ["Chemical", "Optical", "Electrical", "Mechanical"],
-    correct: 1
-  },
-  {
-    id: 195,
-    question: "Which color of light has the shortest wavelength ?",
-    options: ["Yellow", "Blue", "Red", "Green"],
-    correct: 1
-  },
-  {
-    id: 196,
-    question: "Laser action is found in _________ semiconductor.",
-    options: ["direct band gap", "indirect band gap", "germanium", "silicon"],
-    correct: 0
-  },
-  {
-    id: 197,
-    question: "The light from a laser source is monochromatic because all the photons",
-    options: ["are in phase", "have same energy", "have same amplitude", "are in the same direction"],
-    correct: 1
-  },
-  {
-    id: 198,
-    question: "Which one of the following statements best describes stimulated emission in a laser?",
-    options: ["Electrons collide with atoms in a metastable state and cause photons to be emitted.", "Atoms in a metastable state de-excite and cause electrons to be emitted.", "Photons interact with atoms in a metastable state and cause photons to be emitted.", "Photons interact with atoms in a metastable state and cause electrons to be emitted."],
-    correct: 2
-  },
-  {
-    id: 199,
-    question: "Which of the following is an example of optical pumping?",
-    options: ["Nd:YAG", "Helium-Neon laser", "Semiconductor laser", "Dye laser"],
-    correct: 0
-  },
-  {
-    id: 200,
-    question: "Why is laser light monochromatic?",
-    options: ["The excited electrons are in a metastable state.", "The system is in a state of population inversion.", "The emitted photon and incident photon are of the same phase.", "Photons of the same energy as that of the incident photons are emitted when the electrons transit down from a higher energy level."],
-    correct: 3
-  },
-  {
-    id: 201,
-    question: "Which of the following statements concerning a laser system is incorrect?",
-    options: ["Spontaneous emission occurs in the laser system.", "The intensity of the laser beam can be varied by changing the reflective coefficient of the partially reflecting mirror.", "The laser system does not require an external energy source.", "The laser medium consists of a metastable state."],
-    correct: 2
-  },
-  {
-    id: 202,
-    question: "The active medium in Nd:YAG laser is",
-    options: ["Neodymium", "YAG crystal", "Yttrium", "Aluminium"],
-    correct: 0
-  },
-  {
-    id: 203,
-    question: "The number of atoms in the excited state becomes much greater than the number of atoms in the ground state. This is known as",
-    options: ["normal population", "population inversion", "stimulated emission", "spontaneous emission"],
-    correct: 1
-  },
-  {
-    id: 204,
-    question: "Laser light is intense because",
-    options: ["it has very less number of Photons that in phase", "it has very less number of Photons that are not in phase", "it has very large number of Photons that are in phase", "it has very large number of Photons that are not in phase"],
-    correct: 2
-  },
-  {
-    id: 205,
-    question: "The emission of photon without being aided by any external agency is called",
-    options: ["light amplification", "induced absorption", "stimulated emission", "spontaneous emission"],
-    correct: 3
-  },
-  {
-    id: 206,
-    question: "The lifetime of an atom at the ordinary excited state is of the order of",
-    options: ["few millisecond", "few nanosecond", "few microsecond", "unlimited"],
-    correct: 1
-  },
-  {
-    id: 207,
-    question: "The lifetime of an atom in a metastable state is of the order of",
-    options: ["a few second", "Unlimited", "A nanosecond", "Few millisecond"],
-    correct: 3
-  },
-  {
-    id: 208,
-    question: "Supply of energy to atoms for excitation is called",
-    options: ["Glowing", "Bombarding", "Incidenting", "Pumping"],
-    correct: 3
-  },
-  {
-    id: 209,
-    question: "Semiconductor lasers do not require two external mirrors to form an optical cavity because",
-    options: ["the laser light required is of low power", "mere driving a minimum current in the diode is enough for laser action", "p-section acts as one mirror and n-section acts as the other mirror", "a pair of parallel planes cleaved or polished at a particular angle in the crystal reflect the light efficiently"],
-    correct: 3
-  },
-{
-    id: 210,
-    question: "A semiconductor laser has a peak emission radiation of wavelength 1.24 μm. What is its band gap value in eV?",
-    options: ["1.4 eV", "1.6 eV", "1 eV", "1.8 eV"],
-    correct: 2
-  },
-  {
-    id: 211,
-    question: "A He-Ne laser emits light at a wavelength of 632.8 nm and has an output power of 5 mW. The number of photons emitted in each second by this laser are",
-    options: ["1.79 x 10¹⁸ Photons/sec", "1.59 x 10¹⁶ Photons/sec", "0.6 x 10¹⁶ photons/sec", "1.59 x 10¹⁸ photons/sec"],
-    correct: 1
-  },
-  {
-    id: 212,
-    question: "If the wavelength of light emitted by spontaneous emission is 696 nm at 300K, the ratio of population of two energy levels is",
-    options: ["1.059 x 10⁻³²", "1.059 x 10⁻³³", "0.059 x 10⁻³⁰", "1.059 x 10⁻³⁰"],
-    correct: 3
-  },
-  {
-    id: 213,
-    question: "If a pulsed laser emits photons of wavelength 780 nm with 20 mW average power/pulse, the number of photons contained in each pulse if the pulse duration is 10 ns is",
-    options: ["7.86 x 10⁸", "5.08 x 10⁸", "3.86 x 10⁸", "1.86 x 10⁸"],
-    correct: 0
-  },
-  {
-    id: 214,
-    question: "The wavelength of radiation emitted by a semiconducting laser with band gap energy 2.8eV.",
-    options: ["2.8 Å", "4.3308 Å", "5548.4 Å", "4439.8 Å"],
-    correct: 3
-  },
-  {
-    id: 215,
-    question: "Optical fiber works on the phenomenon of _______",
-    options: ["total internal reflection", "polarization", "diffraction", "refraction"],
-    correct: 0
-  },
-  {
-    id: 216,
-    question: "What is the other name for a maximum external incident angle?",
-    options: ["Optical angle", "Total internal reflection angle", "Refraction angle", "Wave guide acceptance angle"],
-    correct: 3
-  },
-  {
-    id: 217,
-    question: "How does the refractive index vary in Graded Index fibre?",
-    options: ["Tangentially", "Radially", "Longitudinally", "Transversely"],
-    correct: 1
-  },
-  {
-    id: 218,
-    question: "Which of the following has more distortion?",
-    options: ["Single step-index fibre", "Graded index fibre", "Multimode step-index fibre", "Glass fibre"],
-    correct: 2
-  },
-  {
-    id: 219,
-    question: "What causes microscopic bend?",
-    options: ["Absorption", "Scattering", "Impurities", "Non-uniform pressure"],
-    correct: 3
-  },
-  {
-    id: 220,
-    question: "The loss in signal power as light travels down a fiber is called",
-    options: ["Dispersion", "Scattering", "Absorption", "Attenuation"],
-    correct: 3
-  },
-  {
-    id: 221,
-    question: "The inner portion of the optical fiber cable is called",
-    options: ["Cladding", "Coating", "Inner conductor", "Core"],
-    correct: 3
-  },
-  {
-    id: 222,
-    question: "When more than one mode is propagating, how is it dispersed?",
-    options: ["Dispersion", "Inter-modal dispersion", "Material dispersion", "Waveguide dispersion"],
-    correct: 1
-  },
-  {
-    id: 223,
-    question: "The core of an optical fiber has a",
-    options: ["Lower refracted index than air", "Lower refractive index than the cladding", "Higher refractive index than the cladding", "Similar refractive index with the cladding"],
-    correct: 2
-  },
-  {
-    id: 224,
-    question: "Having cladding around the core is preferred to coating the core with a reflecting material(silvering) because",
-    options: ["Silvering is not economical", "Coating may get affected by abrasions", "Coated material may undergo chemical changes in the field conditions and thus become dull", "The total internal reflection at the core-cladding interface is superior to the one by any coated material"],
-    correct: 3
-  },
-  {
-    id: 225,
-    question: "Attenuation means",
-    options: ["Amplification of signal strength", "Division of signal strength", "Loss of signal strength", "Tuning of signal"],
-    correct: 2
-  },
-  {
-    id: 226,
-    question: "In an optical fiber the signal loss due to scattering is mainly due to",
-    options: ["Rayleigh scattering", "Raman scattering", "Wein's scattering", "All the answers"],
-    correct: 0
-  },
-  {
-    id: 227,
-    question: "In an optical fiber, Rayleigh scattering occurs when a photon",
-    options: ["Encounters an impurity atom in its path", "Hits the cladding", "Encounters sharp changes in refractive index over distances smaller than its wavelength", "Encounters a microscopic bend"],
-    correct: 2
-  },
-  {
-    id: 228,
-    question: "Signal distortion occurs due to",
-    options: ["Irregularities in fiber structure", "Variation in refractive index of the core at different points", "Spreading of pulse", "Macroscopic bend"],
-    correct: 2
-  },
-  {
-    id: 229,
-    question: "The numerical aperture of an optical fiber in air is 0.32. The numerical aperture of an optical fiber in water of R.I. 1.33 is",
-    options: ["0.43", "0.32", "0.64", "0.96"],
-    correct: 1
-  },
-  {
-    id: 230,
-    question: "The numerical aperture of a fiber if the angle of acceptance is 15 degrees, is",
-    options: ["0.17", "0.26", "0.50", "0.75"],
-    correct: 1
-  },
-  {
-    id: 231,
-    question: "Fractional index change for an optical fiber with core and cladding of refractive indices 1.563 and 1.498 respectively is",
-    options: ["0.00415", "0.04159", "0.04300", "0.00400"],
-    correct: 1
-  },
-  {
-    id: 232,
-    question: "The angle of acceptance of an optical fiber with numerical aperture of 0.446 is",
-    options: ["26.49°", "7.78°", "20.5°", "30.6°"],
-    correct: 0
-  },
-  {
-    id: 233,
-    question: "An optical signal loses 15% of its power after traversing a fiber length of 400 m. The fiber loss is",
-    options: ["0.0176", "1.7645", "17.645", "0.1764"],
-    correct: 1
-  },
-  {
-    id: 234,
-    question: "The attenuation in an optical fiber of length 500 m, when a light signal of power 100 mW emerges out of the fiber with a power of 90 mW is",
-    options: ["0.0915 dB/km", "0.00915dB/km", "9.15 dB/km", "0.915 dB/km"],
-    correct: 3
-  },
-  {
-    id: 235,
-    question: "Optical fibers are used in",
-    options: ["CAT scans", "X-ray photos", "Ultrasound scans", "Endoscopy"],
-    correct: 3
-  },
-  {
-    id: 236,
-    question: "Which fiber is preferred for long distance communication?",
-    options: ["Step index single mode fiber", "Graded index multimode fiber", "Step index multimode fiber", "Both single mode and multimode fibers."],
-    correct: 0
-  },
-  {
-    id: 237,
-    question: "In the structure of the fiber optic cable, the refractive index of the core is always ____ the refractive index of the cladding",
-    options: ["Less than", "Equal to", "Greater than", "None of these"],
-    correct: 2
-  },
-  {
-    id: 238,
-    question: "The numerical aperture (NA) in optical fiber is used to describe",
-    options: ["Light spreading ability", "Light gathering or light-collecting ability", "Light output from an external shield", "Light leakage ability"],
-    correct: 1
-  },
-  {
-    id: 239,
-    question: "The refractive index of the core is uniform throughout and undergoes an abrupt change at the cladding boundary which is known as______",
-    options: ["Uniform-index fiber", "Scale-index fiber", "Graded-index fiber", "Step index fiber"],
-    correct: 3
-  },
-  {
-    id: 240,
-    question: "Emission of a photon by an excited atom due to interaction with a passing photon nearby is called",
-    options: ["Spontaneous emission", "Induced absorption", "Stimulated emission", "Thermionic emission"],
-    correct: 2
-  },
-  {
-    id: 241,
-    question: "In a laser, the mirrors are used on either side of the device",
-    options: ["In order to filter the heat & leave out only the light.", "To protect the eyes of the observer", "So that same photons continue to cause further batches of stimulated transitions", "To save energy of the excitation source"],
-    correct: 2
-  },
-  {
-    id: 242,
-    question: "The loss in signal power as light travels down a fiber is called",
-    options: ["Dispersion", "Scattering", "Absorption", "Attenuation"],
-    correct: 3
-  }  
+  }
 ];
 
         this.currentQuestions = [];
@@ -1864,9 +1306,9 @@ class PHYQuizApp {
 
     saveResult(result) {
         try {
-            let results = JSON.parse(localStorage.getItem('PhysicsQuizResults') || '[]');
+            let results = JSON.parse(localStorage.getItem('BEQuizResults') || '[]');
             results.push(result);
-            localStorage.setItem('PhysicsQuizResults', JSON.stringify(results));
+            localStorage.setItem('BEQuizResults', JSON.stringify(results));
         } catch (error) {
             console.error('Error saving result:', error);
         }
@@ -1911,7 +1353,7 @@ class PHYQuizApp {
 
     showAdminDashboard() {
         try {
-            const results = JSON.parse(localStorage.getItem('PhysicsQuizResults') || '[]');
+            const results = JSON.parse(localStorage.getItem('BEQuizResults') || '[]');
             
             const elements = {
                 totalStudents: document.getElementById('totalStudents'),
@@ -1965,7 +1407,7 @@ class PHYQuizApp {
 
     exportCSV() {
         try {
-            const results = JSON.parse(localStorage.getItem('PhysicsQuizResults') || '[]');
+            const results = JSON.parse(localStorage.getItem('BEQuizResults') || '[]');
             
             if (results.length === 0) {
                 alert('No data to export.');
@@ -1990,7 +1432,7 @@ class PHYQuizApp {
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `Physics_quiz_results_${new Date().toISOString().split('T')[0]}.csv`;
+            a.download = `BE_quiz_results_${new Date().toISOString().split('T')[0]}.csv`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -2014,5 +1456,5 @@ class PHYQuizApp {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new PHYQuizApp();
+    new BEQuizApp();
 });
