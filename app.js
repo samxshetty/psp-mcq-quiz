@@ -246,7 +246,7 @@ class PSPQuizApp {
     id: 41,
     question: "What will be the result of the following expression if a = 6, b = 3, and c = 4? (a * b - c) / (b + c % a) + (a % b * c)",
     options: ["7", "8", "6", "10"],
-    correct: 2
+    correct: 3
   },
   {
     id: 42,
